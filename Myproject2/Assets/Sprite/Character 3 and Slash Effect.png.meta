@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: d82a481a04044ac44a78c54c8bbc870c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1871
+        width: 446
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d962d1e006b01548a0a46aed6a4e8e0
+      internalID: 1694502173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_1
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 1884
+        width: 357
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a7e011807ab8b45a9620a93e6d07ac
+      internalID: 1445574423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_2
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 1423
+        width: 968
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9020c293e10ab8348ad505fea8da7536
+      internalID: 1124707089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_3
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 1939
+        width: 365
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce974b628b10c904d9a280354221fc6f
+      internalID: -1628456591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_4
+      rect:
+        serializedVersion: 2
+        x: 2814
+        y: 1902
+        width: 347
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09360839e36746541936bed3f4558c12
+      internalID: -1184720236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1479
+        width: 220
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2623b2618248a43a9c38d1797e7aaf
+      internalID: 304723574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_6
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1588
+        width: 186
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa77f0e17c005274ab6e1ac5eec657ac
+      internalID: 644212017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_7
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1314
+        width: 178
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4885e7193ee98dd4fa5389676ca05614
+      internalID: 1554561202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_8
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1632
+        width: 141
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e81b1981a6146d4797685b8f4715515
+      internalID: 958398286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_9
+      rect:
+        serializedVersion: 2
+        x: 2224
+        y: 1522
+        width: 168
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1489ce0efd97ff048a6ebe515576c142
+      internalID: -1436836081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_10
+      rect:
+        serializedVersion: 2
+        x: 2553
+        y: 1528
+        width: 351
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a99c908bfafa84d8b62b9f284d7f26
+      internalID: 887856183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_11
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 1382
+        width: 241
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f049cf7c44ea8d4f8753bc27ce40365
+      internalID: 31195213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_12
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 1200
+        width: 63
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc5aeea88afbc5f46ac9bcef55f4f39e
+      internalID: -1585415281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_13
+      rect:
+        serializedVersion: 2
+        x: 2967
+        y: 1460
+        width: 434
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f681f5ee00f548340b96943df51c4e77
+      internalID: 40888916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_14
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 1165
+        width: 100
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf4a7df934261e4fabf7307266f35af
+      internalID: 1596383290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_15
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1193
+        width: 100
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2878ea603163c43af07fd2bb4abc3d
+      internalID: 338900241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_16
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 813
+        width: 510
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e9a69350e548a4698ef1457e65b69a
+      internalID: 1537573570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_17
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 1190
+        width: 144
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d18cc12440cf27498288f424654c9a4
+      internalID: 6209400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_18
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 1183
+        width: 264
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9ce31a03a947e46bab224c5206319f
+      internalID: -1198555899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_19
+      rect:
+        serializedVersion: 2
+        x: 3090
+        y: 1162
+        width: 142
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c66e502a8796241b6c971ea45d1120
+      internalID: 1192989867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_20
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 855
+        height: 818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcfff54e24f122b45811f654790fd1d5
+      internalID: -2045964235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Character 3 and Slash Effect_21
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 59
+        width: 1071
+        height: 604
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad3c027561ba4b42882d7990e017aeb
+      internalID: -818025366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 66000bc9720aaf94290c6716865c5065
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Character 3 and Slash Effect_0: 1694502173
+      Character 3 and Slash Effect_1: 1445574423
+      Character 3 and Slash Effect_10: 887856183
+      Character 3 and Slash Effect_11: 31195213
+      Character 3 and Slash Effect_12: -1585415281
+      Character 3 and Slash Effect_13: 40888916
+      Character 3 and Slash Effect_14: 1596383290
+      Character 3 and Slash Effect_15: 338900241
+      Character 3 and Slash Effect_16: 1537573570
+      Character 3 and Slash Effect_17: 6209400
+      Character 3 and Slash Effect_18: -1198555899
+      Character 3 and Slash Effect_19: 1192989867
+      Character 3 and Slash Effect_2: 1124707089
+      Character 3 and Slash Effect_20: -2045964235
+      Character 3 and Slash Effect_21: -818025366
+      Character 3 and Slash Effect_3: -1628456591
+      Character 3 and Slash Effect_4: -1184720236
+      Character 3 and Slash Effect_5: 304723574
+      Character 3 and Slash Effect_6: 644212017
+      Character 3 and Slash Effect_7: 1554561202
+      Character 3 and Slash Effect_8: 958398286
+      Character 3 and Slash Effect_9: -1436836081
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

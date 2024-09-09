@@ -8,7 +8,6 @@ public class PlayerControl : MonoBehaviour
     public float jumpForce = 7f;
     public Rigidbody2D rb;
     public Animator animator;
-    bool isComboPossible;
     Coroutine attackCoroutine;
 
     bool isGrounded;
@@ -27,22 +26,28 @@ public class PlayerControl : MonoBehaviour
         }
 
         // กดปุ่ม E เพื่อใช้งานอนิเมชั่น Attack
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && isGrounded == true)
         {
-            if (isComboPossible)
+            int randomNumber = Random.Range(1, 3);
+            if (randomNumber == 1)
             {
-                animator.SetTrigger("Attack2");
-                isComboPossible = false;
+                animator.SetBool("Attack1", true);
+                StartCoroutine(ComboTimer());
+                ComboTimer();
             }
             else
             {
-                animator.SetBool("Attack1", true);
-                if (attackCoroutine != null)
-                {
-                    StopCoroutine(attackCoroutine);
-                }
-                attackCoroutine = StartCoroutine(ComboTimer());
+                animator.SetBool("Attack2", true);
+                StartCoroutine(ComboTimer());
             }
+                   
+        }
+        if (Input.GetKeyDown(KeyCode.E) && isGrounded == false)
+        {
+
+            animator.SetBool("AirAttack", true);
+            StartCoroutine(ComboTimer());
+            ComboTimer();
         }
 
         // การหันหน้าตามทิศทางที่เดิน
@@ -57,6 +62,7 @@ public class PlayerControl : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+            animator.SetBool("isGround", true);
         }
     }
 
@@ -65,13 +71,21 @@ public class PlayerControl : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded = false;
+            animator.SetBool("isGround", false);
         }
     }
-    IEnumerator ComboTimer()
+    public IEnumerator  ComboTimer()
     {
-        isComboPossible = true;
+       
         yield return new WaitForSeconds(0.3f);
         animator.SetBool("Attack1", false);
-        isComboPossible = false;
+        animator.SetBool("Attack2", false);
+        animator.SetBool("AirAttack", false);
+        StopCoroutine(ComboTimer());
+    }
+    public void Dead() 
+    {
+       
+        animator.SetTrigger("Dead");
     }
 }

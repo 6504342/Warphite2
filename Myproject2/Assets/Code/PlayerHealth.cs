@@ -6,7 +6,7 @@ public class PlayerHealth : MonoBehaviour
     public float maxHealth = 100f; // ค่าพลังชีวิตสูงสุดของผู้เล่น
     private float currentHealth;   // ค่าพลังชีวิตปัจจุบันของผู้เล่น
     public Slider healthSlider;    // อ้างอิงถึง UI Slider
-    public PlayerControl playerControl;
+    private PlayerControl playerControl;
 
     void Start()
     {

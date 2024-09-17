@@ -6,6 +6,7 @@ public class EnemyHealth : MonoBehaviour
     private float currentHealth;   // ค่าพลังชีวิตปัจจุบันของศัตรู
 
     public float knockbackForce = 5f; // แรงที่ใช้ในการกระเด็น
+    [SerializeField] public float damagedoes = 1f;
 
     private Rigidbody2D rb;
 
@@ -19,7 +20,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (collision.CompareTag("PlayerAttack")) // ตรวจสอบว่าโดนโจมตีจาก Player หรือไม่
         {
-            float damage = 1f; // ค่าความเสียหายที่ได้รับ (ปรับได้ตามต้องการ)
+            float damage = damagedoes;
             TakeDamage(damage);
 
             Vector2 knockbackDirection = (transform.position - collision.transform.position).normalized; // หาทิศทางการกระเด็นถอยไป
@@ -36,6 +37,10 @@ public class EnemyHealth : MonoBehaviour
         {
             Die(); // เรียกฟังก์ชันเมื่อตาย
         }
+    }
+    public void DamagePlayer() 
+    {
+        damagedoes += 1;
     }
 
     void Die()

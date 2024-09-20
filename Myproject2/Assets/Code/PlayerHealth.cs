@@ -8,22 +8,25 @@ public class PlayerHealth : MonoBehaviour
     public Slider healthSlider;    // อ้างอิงถึง UI Slider
     private PlayerControl playerControl;
 
+
     void Start()
     {
+
         playerControl = GetComponent<PlayerControl>();
         currentHealth = maxHealth; // กำหนดค่าเริ่มต้นของพลังชีวิต
         healthSlider.maxValue = maxHealth; // กำหนดค่าพลังชีวิตสูงสุดใน Slider
         healthSlider.value = currentHealth; // แสดงค่าพลังชีวิตเริ่มต้นใน Slider
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy")) // ตรวจสอบว่า GameObject ที่ชนมี Tag เป็น "Enemy" หรือไม่
+        if (collision.gameObject.CompareTag("EnemyAttack")) // ตรวจสอบว่า GameObject ที่ชนมี Tag เป็น "Enemy" หรือไม่
         {
+
             TakeDamage(10f); // ลดพลังชีวิตลงตามค่าที่กำหนด (เช่น 10)
         }
     }
-
     void TakeDamage(float damage)
     {
         currentHealth -= damage; // ลดพลังชีวิตปัจจุบันลงตามค่าความเสียหาย

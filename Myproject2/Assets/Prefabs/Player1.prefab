@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5198690546091790806}
   - component: {fileID: 5621942511680958315}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Character soul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1718284933286479861}
   - component: {fileID: 3238691313855790798}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Pweapontrdark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1990241839344446802}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: jumpanim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 899133209028218536}
   - component: {fileID: 502401889338159865}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Character 3 and Slash Effect_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -306,9 +306,9 @@ GameObject:
   - component: {fileID: 635654656147900986}
   - component: {fileID: 2561168430003620683}
   - component: {fileID: 8416218563145375321}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -360,7 +360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
-  jumpForce: 5
+  jumpForce: 6
   rb: {fileID: 4768841565680368041}
   animator: {fileID: 7483989389576270953}
 --- !u!50 &4768841565680368041
@@ -470,6 +470,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   healthSlider: {fileID: 0}
+  rb: {fileID: 4768841565680368041}
+  knockbackForce: 5
 --- !u!114 &8416218563145375321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,7 +498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8100037921433016727}
   - component: {fileID: 5971851009730499349}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Character 3 and Slash Effect_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -580,7 +582,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4596497142719759702}
   - component: {fileID: 124089941100296751}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PArmR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -665,7 +667,7 @@ GameObject:
   m_Component:
   - component: {fileID: 727710972283641292}
   - component: {fileID: 4898271125497500330}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Character 3 and Slash Effect_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -749,7 +751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2677691088397303173}
   - component: {fileID: 4311731665592411391}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PArmL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -833,7 +835,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5515638242130052270}
   - component: {fileID: 9010795158421844923}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Character 5 Die_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -917,7 +919,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7969411222499586542}
   - component: {fileID: 6020389082728566298}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Character 3 and Slash Effect_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1001,7 +1003,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3596031398959040656}
   - component: {fileID: 685493583026497350}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Character 3 and Slash Effect_21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1085,7 +1087,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7361909733776086761}
   - component: {fileID: 7719522739250652199}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PLegL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1169,7 +1171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5045957899379084305}
   - component: {fileID: 1975218775420060052}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Character 3 and Slash Effect_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1253,7 +1255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8529478305832168631}
   - component: {fileID: 8816377371452455088}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Character 3 and Slash Effect_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1337,7 +1339,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4334218056980535662}
   - component: {fileID: 14474004383336289}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PHead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1421,7 +1423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 319466690513108208}
   - component: {fileID: 4007079846412358339}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Character 3 and Slash Effect_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1505,7 +1507,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7073013850384491444}
   - component: {fileID: 2765516214940498200}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1590,7 +1592,7 @@ GameObject:
   - component: {fileID: 2186389788321938259}
   - component: {fileID: 1514515425312646395}
   - component: {fileID: 7432428856601500035}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Slash Effect_0
   m_TagString: PlayerAttack
   m_Icon: {fileID: 0}
@@ -1719,7 +1721,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4194233777303183840}
   - component: {fileID: 726946940084818492}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1803,7 +1805,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4527714601346139316}
   - component: {fileID: 4089617326648164420}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: swingfoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1888,7 +1890,7 @@ GameObject:
   - component: {fileID: 3460589132714739426}
   - component: {fileID: 8737706828974261251}
   - component: {fileID: 1142361021546381636}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Slash Effect_1
   m_TagString: PlayerAttack
   m_Icon: {fileID: 0}
@@ -2017,7 +2019,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8844226827105007305}
   - component: {fileID: 3095918323043297382}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Character 3 and Slash Effect_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2101,7 +2103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8701524335778732993}
   - component: {fileID: 7383229589272252552}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Slash Effect_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2185,7 +2187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9028624088627706115}
   - component: {fileID: 4974529777515660307}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PArmRsecatk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2269,7 +2271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6313866164710983204}
   - component: {fileID: 5958633488578911871}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Character 4 Shield Attack and Shield Effect_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2353,7 +2355,7 @@ GameObject:
   m_Component:
   - component: {fileID: 447386276066557584}
   - component: {fileID: 6364002537369555417}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PPant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2437,7 +2439,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2859841211825081145}
   - component: {fileID: 7641570182172198782}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PLegR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2522,7 +2524,7 @@ GameObject:
   - component: {fileID: 4728642309176435235}
   - component: {fileID: 39563195253940776}
   - component: {fileID: 788518486506541861}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Slash Effect_2
   m_TagString: PlayerAttack
   m_Icon: {fileID: 0}

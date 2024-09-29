@@ -359,10 +359,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b149ab633a787b649b228651677cba62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 3
   jumpForce: 6
   rb: {fileID: 4768841565680368041}
   animator: {fileID: 7483989389576270953}
+  knockbackForce: 5
+  knockbackDuration: 0.2
 --- !u!50 &4768841565680368041
 Rigidbody2D:
   serializedVersion: 4
@@ -470,8 +472,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   healthSlider: {fileID: 0}
-  rb: {fileID: 4768841565680368041}
-  knockbackForce: 5
 --- !u!114 &8416218563145375321
 MonoBehaviour:
   m_ObjectHideFlags: 0

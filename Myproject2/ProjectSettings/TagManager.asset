@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - PlayerItemPower
   - EnemyAttack
+  - PlayerItemHealth
   layers:
   - Default
   - TransparentFX

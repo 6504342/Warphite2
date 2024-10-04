@@ -324,12 +324,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1627724557257342347}
   - component: {fileID: 6276069640626624475}
+  - component: {fileID: 1878149795249253959}
   - component: {fileID: 1836997348600367936}
   - component: {fileID: 2867607555348974772}
   - component: {fileID: 5452773592291315227}
+  - component: {fileID: 6291857673211691651}
   m_Layer: 0
   m_Name: EnemySkeleton
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -359,7 +361,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6153582115432432066}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8b52e36b17ba7547aad6c9ee76e3d68, type: 3}
   m_Name: 
@@ -382,6 +384,21 @@ MonoBehaviour:
   attackDuration: 2
   returnSpeed: 2
   edgePauseTime: 1
+--- !u!114 &1878149795249253959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6153582115432432066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0004026a4a910ae4383370571e97f212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 10
+  knockbackForce: 5
+  damagedoes: 1
 --- !u!50 &1836997348600367936
 Rigidbody2D:
   serializedVersion: 4
@@ -475,6 +492,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &6291857673211691651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6153582115432432066}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8542c44894e4b344482961bf602c19ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  groundCheck: {fileID: 5124959363860782933}
+  playerCheckFront: {fileID: 7542644309536038441}
+  playerCheck: {fileID: 309275405476852476}
+  animatorenemy: {fileID: 5452773592291315227}
+  detectionDistanceFront: 0.8
+  detectionDistance: -4
+  stopDistance: 1.5
+  edgePauseTime: 1
+  attackDuration: 1
 --- !u!1 &6719882121735921417
 GameObject:
   m_ObjectHideFlags: 0

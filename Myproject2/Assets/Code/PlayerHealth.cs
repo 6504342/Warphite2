@@ -24,12 +24,17 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.CompareTag("EnemyAttack")) // ตรวจสอบว่า GameObject ที่ชนมี Tag เป็น "Enemy" หรือไม่
         {
 
-            TakeDamage(10f); // ลดพลังชีวิตลงตามค่าที่กำหนด (เช่น 10)
+            TakeDamage(-10f); // ลดพลังชีวิตลงตามค่าที่กำหนด (เช่น 10)
+        }
+        if (collision.gameObject.CompareTag("PlayerItemHealth")) 
+        {
+            TakeDamage(50f);
+            Destroy(collision.gameObject);
         }
     }
     void TakeDamage(float damage)
     {
-        currentHealth -= damage; // ลดพลังชีวิตปัจจุบันลงตามค่าความเสียหาย
+        currentHealth += damage; // ลดพลังชีวิตปัจจุบันลงตามค่าความเสียหาย
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // ป้องกันไม่ให้ค่าพลังชีวิตต่ำกว่า 0 หรือเกินค่าพลังชีวิตสูงสุด
         healthSlider.value = currentHealth; // ปรับปรุงค่าใน Slider ให้สอดคล้องกับค่าพลังชีวิตปัจจุบัน
 

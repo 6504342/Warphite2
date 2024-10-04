@@ -55,6 +55,7 @@ public class MonsterPatrol2 : MonoBehaviour
                 else
                 {
                     rb.velocity = Vector2.zero; // หยุดเมื่อเข้าใกล้ผู้เล่น
+                    animatorenemy.SetFloat("Walkspeed", 0);
                     StartCoroutine(Attack()); // เริ่มการโจมตี
                 }
             }
@@ -85,14 +86,6 @@ public class MonsterPatrol2 : MonoBehaviour
 
 
     }
-    IEnumerator WaitBeforeFlip()
-    {
-
-        rb.velocity = Vector2.zero;  // หยุดการเคลื่อนที่
-        yield return new WaitForSeconds(edgePauseTime); // หน่วงเวลาตามที่กำหนด
-        Flip();   // เปลี่ยนทิศทาง
-
-    }
 
     // ฟังก์ชั่นสำหรับเดินไปหาผู้เล่น
     void MoveTowardsPlayer(Transform playerTransform)
@@ -119,7 +112,7 @@ public class MonsterPatrol2 : MonoBehaviour
         if (distanceToStart > 0.1f) // ถ้ามอนสเตอร์ห่างจากตำแหน่งเริ่มต้น
         {
             isReturning = true;
-
+            animatorenemy.SetFloat("Walkspeed", 1);
             // เช็คทิศทางการเดินและพลิกตัวมอนสเตอร์ให้ถูกต้อง
             if ((startingPosition.x < transform.position.x && movingRight) || (startingPosition.x > transform.position.x && !movingRight))
             {
@@ -148,10 +141,10 @@ public class MonsterPatrol2 : MonoBehaviour
     IEnumerator Attack()
     {
         isAttacking = true;  // มอนสเตอร์กำลังโจมตี
-        animatorenemy.SetBool("SkeleAttack", true); // เริ่มการโจมตี
+        animatorenemy.SetBool("EnemyAttack", true); // เริ่มการโจมตี
         rb.velocity = Vector2.zero;  // หยุดการเคลื่อนไหวระหว่างโจมตี
         yield return new WaitForSeconds(attackDuration); // รอจนกว่าเวลาการโจมตีจะหมด
-        animatorenemy.SetBool("SkeleAttack", false); // จบการโจมตี
+        animatorenemy.SetBool("EnemyAttack", false); // จบการโจมตี
         isAttacking = false; // โจมตีเสร็จแล้ว
     }
 

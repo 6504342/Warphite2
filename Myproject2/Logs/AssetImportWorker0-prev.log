@@ -1,0 +1,303 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.22f1 (887be4894c44) revision 8944612'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'en' Physical Memory: 14284 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\UNITY\2022.3.22f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Project game 2/Warphite2/Myproject2
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59978
+Successfully changed project path to: D:/Project game 2/Warphite2/Myproject2
+D:/Project game 2/Warphite2/Myproject2
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [23612] Host "[IP] 192.168.1.102 [Port] 0 [Flags] 2 [Guid] 977897486 [EditorId] 977897486 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ORU6SB9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [23612] Host "[IP] 192.168.1.102 [Port] 0 [Flags] 2 [Guid] 977897486 [EditorId] 977897486 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ORU6SB9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
+Refreshing native plugins compatible for Editor in 36.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.22f1 (887be4894c44)
+[Subsystems] Discovering subsystems at path D:/UNITY/2022.3.22f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Project game 2/Warphite2/Myproject2/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Vega 8 Graphics (ID=0x15dd)
+    Vendor:   ATI
+    VRAM:     7142 MB
+    Driver:   31.0.21905.1001
+Initialize mono
+Mono path[0] = 'D:/UNITY/2022.3.22f1/Editor/Data/Managed'
+Mono path[1] = 'D:/UNITY/2022.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/UNITY/2022.3.22f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56304
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/UNITY/2022.3.22f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/UNITY/2022.3.22f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.018506 seconds.
+- Loaded All Assemblies, in  1.154 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.931 seconds
+Domain Reload Profiling: 2086ms
+	BeginReloadAssembly (421ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (93ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (147ms)
+	LoadAllAssembliesAndSetupDomain (467ms)
+		LoadAssemblies (422ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (459ms)
+			TypeCache.Refresh (456ms)
+				TypeCache.ScanAssembly (422ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (932ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (749ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (16ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (527ms)
+			ProcessInitializeOnLoadMethodAttributes (171ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  2.223 seconds
+Refreshing native plugins compatible for Editor in 23.09 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.848 seconds
+Domain Reload Profiling: 7074ms
+	BeginReloadAssembly (589ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (37ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (61ms)
+	RebuildCommonClasses (125ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (110ms)
+	LoadAllAssembliesAndSetupDomain (1372ms)
+		LoadAssemblies (1053ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (653ms)
+			TypeCache.Refresh (511ms)
+				TypeCache.ScanAssembly (467ms)
+			ScanForSourceGeneratedMonoScriptInfo (102ms)
+			ResolveRequiredComponents (38ms)
+	FinalizeReload (4852ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (4094ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (13ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (318ms)
+			ProcessInitializeOnLoadAttributes (3530ms)
+			ProcessInitializeOnLoadMethodAttributes (203ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (22ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.21 seconds
+Refreshing native plugins compatible for Editor in 14.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5239 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 84 unused Assets / (391.6 KB). Loaded Objects now: 5724.
+Memory consumption went from 226.7 MB to 226.3 MB.
+Total: 10.602600 ms (FindLiveObjects: 1.459800 ms CreateObjectMapping: 0.357400 ms MarkObjects: 8.266100 ms  DeleteObjects: 0.516900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 72b91833f83ae208fae7752999fa3104 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1472982.223966 seconds.
+  path: Assets/Sprite/TileMap/Floor Map Fix_8.asset
+  artifactKey: Guid(6aef0cc9c5c2944458034117fdc6274a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/TileMap/Floor Map Fix_8.asset using Guid(6aef0cc9c5c2944458034117fdc6274a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79c6961a90c416b0128c0e7081f7afce') in 0.301311 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Sprite/TileMap/Floor Map Fix_2.asset
+  artifactKey: Guid(1f2d3de87e45e0a4a931ebc2472e54bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/TileMap/Floor Map Fix_2.asset using Guid(1f2d3de87e45e0a4a931ebc2472e54bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d63e11aff452174c04422483925426') in 0.072409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Sprite/TileMap/Floor Map Fix_12.asset
+  artifactKey: Guid(41134681748bd3847b28a477ecb67517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/TileMap/Floor Map Fix_12.asset using Guid(41134681748bd3847b28a477ecb67517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c85a7afde8312ae15e5d103d8fa26c8b') in 0.064179 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Sprite/TileMap/Floor Map Fix_6.asset
+  artifactKey: Guid(cba50ff79d4f61740a71304a04521b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/TileMap/Floor Map Fix_6.asset using Guid(cba50ff79d4f61740a71304a04521b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bf2d1a2fc18ee88ea111d3faa4b2937') in 0.048809 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Sprite/TileMap/Floor Map Fix_7.asset
+  artifactKey: Guid(8ac2b56b9993ffa449bca34190059462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/TileMap/Floor Map Fix_7.asset using Guid(8ac2b56b9993ffa449bca34190059462) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dec060d3485f8abd8cdee16bf10ab96') in 0.052323 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Sprite/TileMap/Floor Map Fix_3.asset
+  artifactKey: Guid(b06efad5e812ded4487475134dd2eb24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/TileMap/Floor Map Fix_3.asset using Guid(b06efad5e812ded4487475134dd2eb24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb6e2e48fa6669d837fb8d6c1c2654bb') in 0.062741 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Sprite/TileMap/DirtFloor.prefab
+  artifactKey: Guid(a86aab47e217e2c4599b090316879cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/TileMap/DirtFloor.prefab using Guid(a86aab47e217e2c4599b090316879cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93971d891a3fe43b5d151370ada55c20') in 0.770168 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 45
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Sprite/TileMap/Floor Map Fix_10.asset
+  artifactKey: Guid(0150d5a2e34ce2f46ac5f40be1a0c11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/TileMap/Floor Map Fix_10.asset using Guid(0150d5a2e34ce2f46ac5f40be1a0c11a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1361686eb52dc6a92a847b32a6771ee4') in 0.053163 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Sprite/TileMap/Floor Map Fix_4.asset
+  artifactKey: Guid(1d9baa9678722c54c90892b7e77d62bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/TileMap/Floor Map Fix_4.asset using Guid(1d9baa9678722c54c90892b7e77d62bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbfb5a0800afe371eaa8f17d2fc29adf') in 0.050714 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Sprite/TileMap/Floor Map Fix_11.asset
+  artifactKey: Guid(56c885c134903bc44a447b6cd289adfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/TileMap/Floor Map Fix_11.asset using Guid(56c885c134903bc44a447b6cd289adfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55e00dd3b2551138c302e301fce55659') in 0.063001 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Sprite/TileMap/Floor Map Fix_15.asset
+  artifactKey: Guid(d83a89b84bf19494997b63f137d73b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/TileMap/Floor Map Fix_15.asset using Guid(d83a89b84bf19494997b63f137d73b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e53f4f03261dcb5015bbb4789b0b68f9') in 0.059045 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Sprite/TileMap/Floor Map Fix_5.asset
+  artifactKey: Guid(a830c6c50adce6543bc936dbb27eb526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/TileMap/Floor Map Fix_5.asset using Guid(a830c6c50adce6543bc936dbb27eb526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '856b95964cf368e07468313287dfbb60') in 0.053955 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Sprite/TileMap/Floor Map Fix_9.asset
+  artifactKey: Guid(1eabd9315c039f34389917a44892e3af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/TileMap/Floor Map Fix_9.asset using Guid(1eabd9315c039f34389917a44892e3af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ce036b8d7d10a78aa38f3082aa7ae3d') in 0.059695 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Sprite/TileMap/Floor Map Fix_14.asset
+  artifactKey: Guid(bc736aab6ed518c4a9e2bac5b025dcfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/TileMap/Floor Map Fix_14.asset using Guid(bc736aab6ed518c4a9e2bac5b025dcfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4492540f9aec132cc1701e48f2a8ae10') in 0.049084 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Sprite/TileMap/Floor Map Fix_13.asset
+  artifactKey: Guid(91920995391b43b408a82a55d9f81d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/TileMap/Floor Map Fix_13.asset using Guid(91920995391b43b408a82a55d9f81d1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd055e74cd9103e65169fc4b7aa059d0c') in 0.049417 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3

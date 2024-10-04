@@ -55,6 +55,7 @@ public class MonsterPatrol : MonoBehaviour
             else
             {
                 rb.velocity = Vector2.zero; // หยุดเมื่อเข้าใกล้ผู้เล่น
+                animatorenemy.SetFloat("Walkspeed", 0);
                 StartCoroutine(Attack()); // เริ่มการโจมตี
             }
         }
@@ -143,10 +144,10 @@ public class MonsterPatrol : MonoBehaviour
     IEnumerator Attack()
     {
         isAttacking = true;  // มอนสเตอร์กำลังโจมตี
-        animatorenemy.SetBool("InkAttack", true); // เริ่มการโจมตี
+        animatorenemy.SetBool("EnemyAttack", true); // เริ่มการโจมตี
         rb.velocity = Vector2.zero;  // หยุดการเคลื่อนไหวระหว่างโจมตี
         yield return new WaitForSeconds(attackDuration); // รอจนกว่าเวลาการโจมตีจะหมด
-        animatorenemy.SetBool("InkAttack", false); // จบการโจมตี
+        animatorenemy.SetBool("EnemyAttack", false); // จบการโจมตี
         isAttacking = false; // โจมตีเสร็จแล้ว
     }
 

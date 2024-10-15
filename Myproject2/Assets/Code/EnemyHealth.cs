@@ -1,14 +1,18 @@
 using UnityEngine;
+using System.Collections;
 
 public class EnemyHealth : MonoBehaviour
 {
     public float maxHealth = 50f;  // ค่าพลังชีวิตสูงสุดของศัตรู
     private float currentHealth;   // ค่าพลังชีวิตปัจจุบันของศัตรู
+    public float deadtime = 3f;
+    public Animator animatorenemy;
 
     public float knockbackForce = 5f; // แรงที่ใช้ในการกระเด็น
     [SerializeField] public float damagedoes = 1f;
 
     private Rigidbody2D rb;
+    private bool isDead = false;  // ตัวแปรตรวจสอบว่าศัตรูตายหรือยัง
 
     void Start()
     {
@@ -18,7 +22,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("PlayerAttack")) // ตรวจสอบว่าโดนโจมตีจาก Player หรือไม่
+        if (collision.CompareTag("PlayerAttack") && !isDead) // ตรวจสอบว่าโดนโจมตีจาก Player หรือไม่
         {
             float damage = damagedoes;
             TakeDamage(damage);
@@ -33,20 +37,28 @@ public class EnemyHealth : MonoBehaviour
         currentHealth -= damage; // ลดค่าพลังชีวิตตามความเสียหายที่ได้รับ
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // ป้องกันไม่ให้ค่าพลังชีวิตต่ำกว่า 0 หรือเกินค่าพลังชีวิตสูงสุด
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && !isDead) // ตรวจสอบว่าพลังชีวิตหมดแล้วและยังไม่ตาย
         {
-            Die(); // เรียกฟังก์ชันเมื่อตาย
+            StartCoroutine(Die()); // เรียกฟังก์ชันเมื่อตาย
         }
     }
-    public void DamagePlayer() 
+
+    public void DamagePlayer()
     {
-        damagedoes += 1;
+        damagedoes += 1f; // เพิ่มความเสียหายที่ผู้เล่นทำได้
     }
 
-    void Die()
+    public IEnumerator Die()
     {
-        // สิ่งที่เกิดขึ้นเมื่อศัตรูตาย เช่น ลบ GameObject ทิ้ง
-        Debug.Log("Enemy Died!");
-        Destroy(gameObject); // ลบศัตรูเมื่อพลังชีวิตเหลือ 0
+        if (isDead) yield break; // หยุดฟังก์ชันถ้าเคยตายแล้ว
+        isDead = true; // ตั้งค่าสถานะว่าศัตรูตายแล้ว
+
+        animatorenemy.SetBool("Dead", true); // เริ่มแอนิเมชันการตาย
+        rb.velocity = Vector2.zero; // หยุดการเคลื่อนที่ของศัตรู
+
+        // รอจนกว่าแอนิเมชันการตายจะเล่นเสร็จ
+        yield return new WaitForSeconds(deadtime);
+
+        Destroy(gameObject); 
     }
 }

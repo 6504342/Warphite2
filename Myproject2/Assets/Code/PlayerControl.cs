@@ -5,18 +5,32 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public float dashSpeed = 7f;
     public float jumpForce = 7f;
+    public float dashDuration = 0.5f;
     public Rigidbody2D rb;
     public Animator animator;
-    [SerializeField] public float knockbackForce = 5f;
+    public float knockbackForce = 5f;
     public float knockbackDuration = 0.2f;  // ระยะเวลาที่ผู้เล่นจะถูกกระเด็น
+    public float RespawnTime = 0.5f;
+    public PlayerHealth died;
+    [SerializeField] GameObject transition;
 
+
+
+    bool canattack = true;
+    bool isDashing = true;
     bool isGrounded;
+    bool isMoving = true;
     bool isKnockedBack = false;  // ตรวจสอบว่าผู้เล่นอยู่ในสถานะถูกกระเด็นหรือไม่
 
+    private void Start()
+    {
+        died = GetComponent<PlayerHealth>();
+    }
     void Update()
     {
-        if (!isKnockedBack) // ถ้าไม่อยู่ในสถานะกระเด็น ให้สามารถควบคุมการเคลื่อนไหวได้
+        if (!isKnockedBack && isMoving == true)
         {
             float moveInput = Input.GetAxisRaw("Horizontal");
             rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
@@ -30,7 +44,7 @@ public class PlayerControl : MonoBehaviour
             }
 
             // กดปุ่ม E เพื่อใช้งานอนิเมชั่น Attack
-            if (Input.GetKeyDown(KeyCode.E) && isGrounded == true)
+            if (Input.GetKeyDown(KeyCode.E) && isGrounded && canattack == true)
             {
                 int randomNumber = Random.Range(1, 3);
                 if (randomNumber == 1)
@@ -46,8 +60,11 @@ public class PlayerControl : MonoBehaviour
             }
             if (Input.GetKeyDown(KeyCode.E) && isGrounded == false)
             {
-                animator.SetBool("AirAttack", true);
-                StartCoroutine(ComboTimer());
+                if (canattack == true)
+                {
+                    animator.SetBool("AirAttack", true);
+                    StartCoroutine(ComboTimer());
+                }
             }
 
             // การหันหน้าตามทิศทางที่เดิน
@@ -55,7 +72,24 @@ public class PlayerControl : MonoBehaviour
             {
                 transform.localScale = new Vector3(Mathf.Sign(moveInput), 1, 1);
             }
+            if (Input.GetKeyDown(KeyCode.LeftShift) && isDashing == true)
+            {
+                StartCoroutine(Dash());
+            } 
         }
+    }
+    private IEnumerator Dash()
+    {
+        isDashing = false;          // ตั้งค่าว่ากำลังพุ่ง
+        moveSpeed += dashSpeed;    // เพิ่มความเร็วพุ่ง
+        animator.speed = 3;
+
+        yield return new WaitForSeconds(dashDuration);  // รอจนกว่าจะพุ่งครบระยะเวลา
+
+        moveSpeed -= dashSpeed;    // กลับไปที่ความเร็วปกติ        // ตั้งค่าว่าหยุดพุ่งแล้ว
+        animator.speed = 1.5f;
+        yield return new WaitForSeconds(1f);
+        isDashing = true;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -98,7 +132,9 @@ public class PlayerControl : MonoBehaviour
 
     public IEnumerator ComboTimer()
     {
+        canattack = false;
         yield return new WaitForSeconds(0.3f);
+        canattack = true;
         animator.SetBool("Attack1", false);
         animator.SetBool("Attack2", false);
         animator.SetBool("AirAttack", false);
@@ -107,6 +143,20 @@ public class PlayerControl : MonoBehaviour
 
     public void Dead()
     {
+        rb.velocity = Vector2.zero;
+        isMoving = false;
         animator.SetTrigger("Dead");
+        StartCoroutine(Respawn());
+    }
+    public IEnumerator Respawn() 
+    {
+        transition.SetActive(true);
+        yield return new WaitForSeconds(RespawnTime);
+        died.Respawn();
+        animator.SetTrigger("Dead");
+        rb.position = new Vector2(0, 0);
+        isMoving = true;
+        yield return new WaitForSeconds(RespawnTime);
+        transition.SetActive(false);
     }
 }

@@ -58,6 +58,10 @@ public class MonsterPatrol : MonoBehaviour
                 animatorenemy.SetFloat("Walkspeed", 0);
                 StartCoroutine(Attack()); // เริ่มการโจมตี
             }
+            if (distanceToPlayer == groundLayer)
+            {
+                Flip();
+            }
         }
         else if (playerHit.collider != null)
         {
@@ -167,5 +171,12 @@ public class MonsterPatrol : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawLine(playerCheck.position, playerCheck.position + Vector3.right * detectionDistance);  // ด้านขวา
         Gizmos.DrawLine(playerCheck.position, playerCheck.position + Vector3.left * detectionDistance);   // ด้านซ้าย
+    }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            Flip();
+        }
     }
 }

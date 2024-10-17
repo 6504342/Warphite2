@@ -10,16 +10,19 @@ TagManager:
   - PlayerItemPower
   - EnemyAttack
   - PlayerItemHealth
+  - Item
+  - Wall
+  - repow
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Decoration
   - Water
   - UI
   - Floor
   - Player
-  - 
+  - Background
   - 
   - 
   - 

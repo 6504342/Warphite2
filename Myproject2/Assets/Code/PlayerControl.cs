@@ -8,6 +8,7 @@ public class PlayerControl : MonoBehaviour
     public float dashSpeed = 7f;
     public float jumpForce = 7f;
     public float dashDuration = 0.5f;
+    public Transform checkpoint;
     public Rigidbody2D rb;
     public Animator animator;
     public float knockbackForce = 5f;
@@ -41,6 +42,10 @@ public class PlayerControl : MonoBehaviour
             if (Input.GetButtonDown("Jump") && isGrounded)
             {
                 rb.velocity = Vector2.up * jumpForce;
+            }
+            if (Input.GetKeyDown(KeyCode.L)) 
+            {
+                moveSpeed = 15f;
             }
 
             // กดปุ่ม E เพื่อใช้งานอนิเมชั่น Attack
@@ -154,7 +159,7 @@ public class PlayerControl : MonoBehaviour
         yield return new WaitForSeconds(RespawnTime);
         died.Respawn();
         animator.SetTrigger("Dead");
-        rb.position = new Vector2(0, 0);
+        rb.position = checkpoint.gameObject.transform.position;
         isMoving = true;
         yield return new WaitForSeconds(RespawnTime);
         transition.SetActive(false);

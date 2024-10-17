@@ -7,9 +7,10 @@ public class EnemyHealth : MonoBehaviour
     private float currentHealth;   // ค่าพลังชีวิตปัจจุบันของศัตรู
     public float deadtime = 3f;
     public Animator animatorenemy;
+    public Transform Itemdrop;
 
     public float knockbackForce = 5f; // แรงที่ใช้ในการกระเด็น
-    [SerializeField] public float damagedoes = 1f;
+    public int damagedoes = 1;
 
     private Rigidbody2D rb;
     private bool isDead = false;  // ตัวแปรตรวจสอบว่าศัตรูตายหรือยัง
@@ -24,7 +25,7 @@ public class EnemyHealth : MonoBehaviour
     {
         if (collision.CompareTag("PlayerAttack") && !isDead) // ตรวจสอบว่าโดนโจมตีจาก Player หรือไม่
         {
-            float damage = damagedoes;
+            int damage = damagedoes;
             TakeDamage(damage);
 
             Vector2 knockbackDirection = (transform.position - collision.transform.position).normalized; // หาทิศทางการกระเด็นถอยไป
@@ -32,7 +33,7 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    void TakeDamage(float damage)
+    void TakeDamage(int damage)
     {
         currentHealth -= damage; // ลดค่าพลังชีวิตตามความเสียหายที่ได้รับ
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // ป้องกันไม่ให้ค่าพลังชีวิตต่ำกว่า 0 หรือเกินค่าพลังชีวิตสูงสุด
@@ -43,9 +44,9 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    public void DamagePlayer()
+    public void DamagePlayer(int dmg)
     {
-        damagedoes += 1f; // เพิ่มความเสียหายที่ผู้เล่นทำได้
+        damagedoes = dmg; // เพิ่มความเสียหายที่ผู้เล่นทำได้
     }
 
     public IEnumerator Die()
@@ -58,7 +59,7 @@ public class EnemyHealth : MonoBehaviour
 
         // รอจนกว่าแอนิเมชันการตายจะเล่นเสร็จ
         yield return new WaitForSeconds(deadtime);
-
+        Itemdrop.gameObject.SetActive(true);
         Destroy(gameObject); 
     }
 }

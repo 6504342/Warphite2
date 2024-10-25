@@ -8,7 +8,6 @@ public class PlayerControl : MonoBehaviour
     public float dashSpeed = 7f;
     public float jumpForce = 7f;
     public float dashDuration = 0.5f;
-    public Transform checkpoint;
     public Rigidbody2D rb;
     public Animator animator;
     public float knockbackForce = 5f;
@@ -16,6 +15,9 @@ public class PlayerControl : MonoBehaviour
     public float RespawnTime = 0.5f;
     public PlayerHealth died;
     [SerializeField] GameObject transition;
+    private Vector2 currentRespawnPoint;  // ตำแหน่งการเกิดใหม่ปัจจุบัน
+    public Vector2 defaultRespawnPoint;   // ตำแหน่งเริ่มต้น
+
 
 
 
@@ -28,6 +30,7 @@ public class PlayerControl : MonoBehaviour
     private void Start()
     {
         died = GetComponent<PlayerHealth>();
+        currentRespawnPoint = defaultRespawnPoint;
     }
     void Update()
     {
@@ -70,6 +73,10 @@ public class PlayerControl : MonoBehaviour
                     animator.SetBool("AirAttack", true);
                     StartCoroutine(ComboTimer());
                 }
+            }
+            if (Input.GetKeyDown(KeyCode.M)) 
+            {
+                Dead();
             }
 
             // การหันหน้าตามทิศทางที่เดิน
@@ -122,6 +129,11 @@ public class PlayerControl : MonoBehaviour
             Vector2 knockbackDirection = (transform.position - collision.transform.position).normalized; // หาทิศทางการกระเด็นถอยไป
             StartCoroutine(Knockback(knockbackDirection));  // เรียกใช้ Coroutine เพื่อจัดการการกระเด็น
         }
+        if (collision.CompareTag("Respawn"))
+        {
+            // บันทึกตำแหน่ง Respawn เมื่อชนกับจุด Respawn Point
+            currentRespawnPoint = collision.transform.position;
+        }
     }
 
     public IEnumerator Knockback(Vector2 knockbackDirection)
@@ -159,7 +171,7 @@ public class PlayerControl : MonoBehaviour
         yield return new WaitForSeconds(RespawnTime);
         died.Respawn();
         animator.SetTrigger("Dead");
-        rb.position = checkpoint.gameObject.transform.position;
+        transform.position = currentRespawnPoint;
         isMoving = true;
         yield return new WaitForSeconds(RespawnTime);
         transition.SetActive(false);

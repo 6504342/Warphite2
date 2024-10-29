@@ -71,6 +71,7 @@
     <Compile Include="Assets\Code\PlayerHealth.cs" />
     <Compile Include="Assets\Code\Spawnmonster.cs" />
     <Compile Include="Assets\Code\changetosave.cs" />
+    <Compile Include="Assets\Code\BossRoom.cs" />
     <Compile Include="Assets\Code\Uipausemenu.cs" />
     <Compile Include="Assets\Code\PlayerControl.cs" />
   </ItemGroup>

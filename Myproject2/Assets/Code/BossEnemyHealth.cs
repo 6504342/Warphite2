@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class EnemyHealth : MonoBehaviour
+public class BossEnemyHealth : MonoBehaviour
 {
     public float maxHealth = 50f;  // ค่าพลังชีวิตสูงสุดของศัตรู
     private float currentHealth;   // ค่าพลังชีวิตปัจจุบันของศัตรู
@@ -14,13 +14,11 @@ public class EnemyHealth : MonoBehaviour
 
     private Rigidbody2D rb;
     private bool isDead = false;  // ตัวแปรตรวจสอบว่าศัตรูตายหรือยัง
-    private Bossdata bd;
 
     void Start()
     {
         currentHealth = maxHealth; // กำหนดค่าพลังชีวิตเริ่มต้น
         rb = GetComponent<Rigidbody2D>(); // อ้างอิงถึง Rigidbody2D ของศัตรู
-        bd = FindObjectOfType<Bossdata>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -29,15 +27,13 @@ public class EnemyHealth : MonoBehaviour
         {
             int damage = damagedoes;
             TakeDamage(damage);
-
-            Vector2 knockbackDirection = (transform.position - collision.transform.position).normalized; // หาทิศทางการกระเด็นถอยไป
-            rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse); // เพิ่มแรงกระเด็นถอยไป
         }
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage; // ลดค่าพลังชีวิตตามความเสียหายที่ได้รับ
+        maxHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // ป้องกันไม่ให้ค่าพลังชีวิตต่ำกว่า 0 หรือเกินค่าพลังชีวิตสูงสุด
 
         if (currentHealth <= 0 && !isDead) // ตรวจสอบว่าพลังชีวิตหมดแล้วและยังไม่ตาย
@@ -61,8 +57,7 @@ public class EnemyHealth : MonoBehaviour
 
         // รอจนกว่าแอนิเมชันการตายจะเล่นเสร็จ
         yield return new WaitForSeconds(deadtime);
-        bd.BossHealthReduce();
         Itemdrop.gameObject.SetActive(true);
-        Destroy(gameObject); 
+        Destroy(gameObject);
     }
 }

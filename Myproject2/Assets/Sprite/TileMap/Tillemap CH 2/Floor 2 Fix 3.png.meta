@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 430
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,6 +93,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -101,11 +114,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1740
-        width: 431
-        height: 434
+        y: 750
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,18 +134,18 @@ TextureImporter:
       name: Floor 2 Fix 3_1
       rect:
         serializedVersion: 2
-        x: 431
-        y: 1740
-        width: 431
-        height: 434
+        x: 250
+        y: 750
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0122946e0ed7afb44b9c1b67c6fc5f65
+      spriteID: ff52288e0044adb44a692bdfc2a721cb
       internalID: 965905560
       vertices: []
       indices: 
@@ -142,18 +155,18 @@ TextureImporter:
       name: Floor 2 Fix 3_2
       rect:
         serializedVersion: 2
-        x: 859
-        y: 1740
-        width: 431
-        height: 434
+        x: 500
+        y: 750
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b320d6140e8dfbf4f8c6ae6d8244f277
+      spriteID: 0089f86cca285b34fbf0c50527da7d91
       internalID: -1252415932
       vertices: []
       indices: 
@@ -163,18 +176,18 @@ TextureImporter:
       name: Floor 2 Fix 3_3
       rect:
         serializedVersion: 2
-        x: 1293
-        y: 1740
-        width: 431
-        height: 434
+        x: 750
+        y: 750
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c602201fe0be7f8489e83cecb9c86d21
+      spriteID: 3b8ed7f2a3b40c541ae9bd11831e1bb3
       internalID: -1463454287
       vertices: []
       indices: 
@@ -185,17 +198,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1306
-        width: 431
-        height: 434
+        y: 500
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 313a68b76c0e3a843b46e2a96b600356
+      spriteID: 96abf9b78b3a5c9469301733465a84db
       internalID: 391118784
       vertices: []
       indices: 
@@ -205,18 +218,18 @@ TextureImporter:
       name: Floor 2 Fix 3_5
       rect:
         serializedVersion: 2
-        x: 431
-        y: 1306
-        width: 431
-        height: 434
+        x: 250
+        y: 500
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ed39b072134e544382704b731d7c778
+      spriteID: 9ed99f4020b533044b0ff9c9f3df8fe6
       internalID: 714083875
       vertices: []
       indices: 
@@ -226,18 +239,18 @@ TextureImporter:
       name: Floor 2 Fix 3_6
       rect:
         serializedVersion: 2
-        x: 862
-        y: 1306
-        width: 431
-        height: 434
+        x: 500
+        y: 500
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58ecae1a5e8e9784fb00b114c3ec9081
+      spriteID: 9965e642567cb1940b3aca06e64cbf30
       internalID: -1223225261
       vertices: []
       indices: 
@@ -247,18 +260,18 @@ TextureImporter:
       name: Floor 2 Fix 3_7
       rect:
         serializedVersion: 2
-        x: 1293
-        y: 1306
-        width: 431
-        height: 434
+        x: 750
+        y: 500
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e76060e02ef998149aa5d476656bee05
+      spriteID: 121b96f4d9d2f3946b744b2db681d482
       internalID: -709029201
       vertices: []
       indices: 
@@ -269,17 +282,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 872
-        width: 431
-        height: 434
+        y: 250
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e09a8b0dd8ef83945867a05329681289
+      spriteID: d95e46ce2e973364d95d76a21203055f
       internalID: -44245472
       vertices: []
       indices: 
@@ -289,18 +302,18 @@ TextureImporter:
       name: Floor 2 Fix 3_9
       rect:
         serializedVersion: 2
-        x: 431
-        y: 872
-        width: 431
-        height: 434
+        x: 250
+        y: 250
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ace1695700c33940bec81f8b244834e
+      spriteID: b01b15621fd0ae540826ef304c192823
       internalID: -9849939
       vertices: []
       indices: 
@@ -310,18 +323,18 @@ TextureImporter:
       name: Floor 2 Fix 3_10
       rect:
         serializedVersion: 2
-        x: 862
-        y: 872
-        width: 431
-        height: 434
+        x: 500
+        y: 250
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2056ca747e5e21e408b9cec0ff6f4fe7
+      spriteID: 916a681a6b1dcd9429710741cfcce7b5
       internalID: -2101333894
       vertices: []
       indices: 
@@ -331,18 +344,18 @@ TextureImporter:
       name: Floor 2 Fix 3_11
       rect:
         serializedVersion: 2
-        x: 1293
-        y: 872
-        width: 431
-        height: 434
+        x: 750
+        y: 250
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a91eb2a0ee50974b967293837465978
+      spriteID: e43e00ed65bb11a48adcc83584cdd1f8
       internalID: 1359732036
       vertices: []
       indices: 
@@ -353,17 +366,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 438
-        width: 431
-        height: 434
+        y: 0
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9046ebd8bcebf541831f356dbc63559
+      spriteID: a6e57e943880a4445b1a4570fb6e6769
       internalID: -1617712671
       vertices: []
       indices: 
@@ -373,18 +386,18 @@ TextureImporter:
       name: Floor 2 Fix 3_13
       rect:
         serializedVersion: 2
-        x: 431
-        y: 438
-        width: 431
-        height: 434
+        x: 250
+        y: 0
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 100f4b67cc835bc47b5bf1530199dfb6
+      spriteID: a06210370c792b74283f47b78cef81cc
       internalID: -630513630
       vertices: []
       indices: 
@@ -394,124 +407,19 @@ TextureImporter:
       name: Floor 2 Fix 3_14
       rect:
         serializedVersion: 2
-        x: 862
-        y: 438
-        width: 431
-        height: 434
+        x: 500
+        y: 0
+        width: 250
+        height: 250
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4699b6e56cdea70428feb91b42b27acc
-      internalID: -1901633492
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor 2 Fix 3_15
-      rect:
-        serializedVersion: 2
-        x: 1293
-        y: 438
-        width: 431
-        height: 434
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 252316e56d5d29d46965ed94e070ba3f
-      internalID: -466085732
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor 2 Fix 3_16
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 4
-        width: 431
-        height: 434
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2a0631d3eace3a045ae6aa995809085a
-      internalID: -527930968
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor 2 Fix 3_17
-      rect:
-        serializedVersion: 2
-        x: 431
-        y: 4
-        width: 431
-        height: 434
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0151d63dd8da77240bd7b5adb699b98d
-      internalID: -1865342946
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor 2 Fix 3_18
-      rect:
-        serializedVersion: 2
-        x: 862
-        y: 4
-        width: 431
-        height: 434
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efeb6e4d14005a34e8359417d275ce76
-      internalID: 1820566620
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor 2 Fix 3_19
-      rect:
-        serializedVersion: 2
-        x: 1293
-        y: 4
-        width: 431
-        height: 434
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e1a9b723213c424d90cf04ea8ec80b0
-      internalID: 117771310
+      spriteID: 5fdcd452b62c76247a0528a669f40a42
+      internalID: -2066866457
       vertices: []
       indices: 
       edges: []
@@ -533,12 +441,7 @@ TextureImporter:
       Floor 2 Fix 3_11: 1359732036
       Floor 2 Fix 3_12: -1617712671
       Floor 2 Fix 3_13: -630513630
-      Floor 2 Fix 3_14: -1901633492
-      Floor 2 Fix 3_15: -466085732
-      Floor 2 Fix 3_16: -527930968
-      Floor 2 Fix 3_17: -1865342946
-      Floor 2 Fix 3_18: 1820566620
-      Floor 2 Fix 3_19: 117771310
+      Floor 2 Fix 3_14: -2066866457
       Floor 2 Fix 3_2: -1252415932
       Floor 2 Fix 3_3: -1463454287
       Floor 2 Fix 3_4: 391118784

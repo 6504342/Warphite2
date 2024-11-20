@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,13 +37,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -93,20 +93,288 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: UI Fix 1_0
+      rect:
+        serializedVersion: 2
+        x: 6353
+        y: 3913
+        width: 706
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 417ae0c14ffb3364db6c482ece5f35d1
+      internalID: 2053907525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Fix 1_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 834
+        width: 2219
+        height: 2914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d162fd5bb04f9ed41bf3d329b2023bc4
+      internalID: -673796332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Fix 1_6
+      rect:
+        serializedVersion: 2
+        x: 6324
+        y: 3398
+        width: 692
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3607a8fb0a2486d4c8b580e12586ebdd
+      internalID: 1729701721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Fix 1_15
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 955
+        width: 2221
+        height: 2111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0988e1a0948dd434eb460e1e540c6e25
+      internalID: 1672624122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Fix 1_16
+      rect:
+        serializedVersion: 2
+        x: 5996
+        y: 2975
+        width: 1449
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f8f2ab9c2715549a8c33b36623b9b4
+      internalID: 697035685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Fix 1_27
+      rect:
+        serializedVersion: 2
+        x: 6494
+        y: 2520
+        width: 373
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180f7057dc5900449ac185114d0f0704
+      internalID: 851970049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Fix 1_32
+      rect:
+        serializedVersion: 2
+        x: 6338
+        y: 1670
+        width: 709
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7f8fbc2b58f0c4aa1a447c78747135
+      internalID: -1609034288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Fix 1_39
+      rect:
+        serializedVersion: 2
+        x: 6324
+        y: 1081
+        width: 712
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e8c25b142dd0b4eb4b446ecf8e3de3
+      internalID: 1971734865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Fix 1_42
+      rect:
+        serializedVersion: 2
+        x: 5949
+        y: 572
+        width: 1465
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0127fc649c39ca247ad31d7bdc05a95b
+      internalID: 26414391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Fix 1_43
+      rect:
+        serializedVersion: 2
+        x: 6469
+        y: 24
+        width: 393
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72e0db4a3989b77478c09c1b9eba63d4
+      internalID: 1163022442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b46bcf80921b6f646a24a7814090fdb9
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UI Fix 1_0: 2053907525
+      UI Fix 1_1: -458119553
+      UI Fix 1_10: 1092574183
+      UI Fix 1_11: -139382823
+      UI Fix 1_12: 1141906050
+      UI Fix 1_13: -1398851242
+      UI Fix 1_14: 590626985
+      UI Fix 1_15: 1672624122
+      UI Fix 1_16: 697035685
+      UI Fix 1_17: 1022208856
+      UI Fix 1_18: 947775955
+      UI Fix 1_19: 1354025192
+      UI Fix 1_2: 658863036
+      UI Fix 1_20: -26269304
+      UI Fix 1_21: -1748761622
+      UI Fix 1_22: -1521824219
+      UI Fix 1_23: -324764675
+      UI Fix 1_24: -961843774
+      UI Fix 1_25: 593624274
+      UI Fix 1_26: 1891644128
+      UI Fix 1_27: 851970049
+      UI Fix 1_28: 1035480679
+      UI Fix 1_29: 541374455
+      UI Fix 1_3: -1817259245
+      UI Fix 1_30: -993693558
+      UI Fix 1_31: 2124410369
+      UI Fix 1_32: -1609034288
+      UI Fix 1_33: 745711478
+      UI Fix 1_34: -800972269
+      UI Fix 1_35: -2134956070
+      UI Fix 1_36: -1380016525
+      UI Fix 1_37: -454665482
+      UI Fix 1_38: -1547974081
+      UI Fix 1_39: 1971734865
+      UI Fix 1_4: -433408686
+      UI Fix 1_40: -630508855
+      UI Fix 1_41: 161781441
+      UI Fix 1_42: 26414391
+      UI Fix 1_43: 1163022442
+      UI Fix 1_44: -226068311
+      UI Fix 1_5: -673796332
+      UI Fix 1_6: 1729701721
+      UI Fix 1_7: -1933177751
+      UI Fix 1_8: -1746337096
+      UI Fix 1_9: -327235228
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

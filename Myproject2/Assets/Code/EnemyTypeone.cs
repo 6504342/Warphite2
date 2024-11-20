@@ -21,9 +21,11 @@ public class MonsterPatrol : MonoBehaviour
     private bool isAtEdge = false;          // ตรวจสอบว่ามอนสเตอร์อยู่ที่ขอบหรือไม่
     private bool isWaiting = false;         // ตรวจสอบว่ามอนสเตอร์กำลังรอหรือไม่
     private bool isAttacking = false;       // ตัวแปรตรวจสอบว่ามอนสเตอร์กำลังโจมตี
+    EnemySoundEffect effect;
 
     void Start()
     {
+        effect = GetComponent<EnemySoundEffect>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -135,6 +137,7 @@ public class MonsterPatrol : MonoBehaviour
     // ฟังก์ชั่นหน่วงเวลาไว้ก่อนจะเปลี่ยนทิศทางเมื่อมอนสเตอร์ถึงขอบ
     IEnumerator WaitBeforeFlip()
     {
+
         isAtEdge = true;   // บอกว่ามอนสเตอร์ถึงขอบแล้ว
         isWaiting = true;  // บอกว่ามอนสเตอร์กำลังรอ
         rb.velocity = Vector2.zero;  // หยุดการเคลื่อนที่
@@ -147,6 +150,7 @@ public class MonsterPatrol : MonoBehaviour
     // ฟังก์ชั่นจัดการการโจมตี
     IEnumerator Attack()
     {
+        effect.EnemySoundHighpitch(0);
         isAttacking = true;  // มอนสเตอร์กำลังโจมตี
         animatorenemy.SetBool("EnemyAttack", true); // เริ่มการโจมตี
         rb.velocity = Vector2.zero;  // หยุดการเคลื่อนไหวระหว่างโจมตี

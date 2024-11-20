@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 12
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,13 +37,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -93,20 +93,363 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: UI Button & Logo_1
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 3961
+        width: 1084
+        height: 373
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a015be55ae8e940ab0128ae3bbf82c
+      internalID: 1461297196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Button & Logo_2
+      rect:
+        serializedVersion: 2
+        x: 3397
+        y: 0
+        width: 3880
+        height: 4506
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5864e6c0bf4e994880ffe1c50251ad2
+      internalID: 1719245674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Button & Logo_3
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 3523
+        width: 1084
+        height: 374
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3574b0f52bcc1e0409f908a83c9499cc
+      internalID: -1620390050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Button & Logo_4
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 3061
+        width: 1084
+        height: 374
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf14b60d968885c4395e5ca227b00898
+      internalID: -1177023333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Button & Logo_5
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 2585
+        width: 1080
+        height: 370
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0611a20523d0143a7129b26466b805
+      internalID: -1105771118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Button & Logo_6
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 2138
+        width: 1080
+        height: 365
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9676ed60babf34444a0362b6e1016f1c
+      internalID: 1333111236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Button & Logo_7
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 1686
+        width: 1084
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d68ef638852b722459a93e7c84fa46f0
+      internalID: -1411588832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Button & Logo_8
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 66
+        width: 1365
+        height: 1411
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6dd68342621f840841230527111059
+      internalID: -479474745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Button & Logo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3058
+        width: 1076
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b690e4f4ddb7845a0d09b02d06c0e4
+      internalID: -1297701983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Button & Logo_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3955
+        width: 1074
+        height: 373
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45c5d13e127b1f647a2e30e73af839fb
+      internalID: -948813843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Button & Logo_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3520
+        width: 1073
+        height: 373
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321f620816d88a04ea56d8a293a108ab
+      internalID: 1086652025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Button & Logo_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2583
+        width: 1074
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f226c632acd54843b989e3fa2a8cf79
+      internalID: -1830668830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Button & Logo_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2135
+        width: 1078
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89e31de7a42d4042bc5581c32c5b4fc
+      internalID: -349617641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Button & Logo_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1681
+        width: 1076
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498de9c6610c06443a8dd8d95d835e79
+      internalID: 1742333536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI Button & Logo_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1219
+        width: 1075
+        height: 364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb6d935b4cde34428346188ac6a79ce
+      internalID: 1521996341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a576b1daf31bfa441bff5db8907a0c49
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UI Button & Logo_0: -1297701983
+      UI Button & Logo_1: 1461297196
+      UI Button & Logo_10: 1086652025
+      UI Button & Logo_11: -1830668830
+      UI Button & Logo_12: -349617641
+      UI Button & Logo_13: 1742333536
+      UI Button & Logo_14: 1521996341
+      UI Button & Logo_2: 1719245674
+      UI Button & Logo_3: -1620390050
+      UI Button & Logo_4: -1177023333
+      UI Button & Logo_5: -1105771118
+      UI Button & Logo_6: 1333111236
+      UI Button & Logo_7: -1411588832
+      UI Button & Logo_8: -479474745
+      UI Button & Logo_9: -948813843
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

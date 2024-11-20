@@ -5,7 +5,6 @@ public class EnemyHealth : MonoBehaviour
 {
     public float maxHealth = 50f;  // ค่าพลังชีวิตสูงสุดของศัตรู
     private float currentHealth;   // ค่าพลังชีวิตปัจจุบันของศัตรู
-    public float deadtime = 3f;
     public Animator animatorenemy;
     public Transform Itemdrop;
 
@@ -15,9 +14,11 @@ public class EnemyHealth : MonoBehaviour
     private Rigidbody2D rb;
     private bool isDead = false;  // ตัวแปรตรวจสอบว่าศัตรูตายหรือยัง
     private Bossdata bd;
+    EnemySoundEffect effect;
 
     void Start()
     {
+        effect = GetComponent<EnemySoundEffect>();
         currentHealth = maxHealth; // กำหนดค่าพลังชีวิตเริ่มต้น
         rb = GetComponent<Rigidbody2D>(); // อ้างอิงถึง Rigidbody2D ของศัตรู
         bd = FindObjectOfType<Bossdata>();
@@ -55,12 +56,26 @@ public class EnemyHealth : MonoBehaviour
     {
         if (isDead) yield break; // หยุดฟังก์ชันถ้าเคยตายแล้ว
         isDead = true; // ตั้งค่าสถานะว่าศัตรูตายแล้ว
+        effect.EnemySoundHighpitch(1);
 
         animatorenemy.SetBool("Dead", true); // เริ่มแอนิเมชันการตาย
         rb.velocity = Vector2.zero; // หยุดการเคลื่อนที่ของศัตรู
+        var monster = FindObjectOfType<MonsterPatrol>();
+        if (monster != null)
+        {
+            monster.StopAllCoroutines(); // หยุด Coroutine ทั้งหมดของ MonsterPatrol
+            Debug.Log("MonsterPatrol stopped");
+        }
 
+        // หยุดการทำงานของ MonsterPatrol2
+        var monster2 = FindObjectOfType<MonsterPatrol2>();
+        if (monster2 != null)
+        {
+            monster2.StopAllCoroutines(); // หยุด Coroutine ทั้งหมดของ MonsterPatrol2
+            Debug.Log("MonsterPatrol2 stopped");
+        }
         // รอจนกว่าแอนิเมชันการตายจะเล่นเสร็จ
-        yield return new WaitForSeconds(deadtime);
+        yield return new WaitForSeconds(2.5f);
         bd.BossHealthReduce();
         Itemdrop.gameObject.SetActive(true);
         Destroy(gameObject); 

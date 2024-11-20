@@ -34,4 +34,9 @@ public class changetosave : MonoBehaviour
         yield return new WaitForSeconds(2f);
         transition.SetActive(false);
     }
+    public void delete() 
+    {
+        Time.timeScale = 1f;
+        Destroy(gameObject); 
+    }
 }

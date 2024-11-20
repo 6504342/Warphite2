@@ -23,10 +23,12 @@ public class MonsterPatrol2 : MonoBehaviour
     private Rigidbody2D rb;
     private bool isAttacking = false;        // ตัวแปรตรวจสอบว่ามอนสเตอร์กำลังโจมตี
     private bool isReturning = false;        // ตัวแปรตรวจสอบว่ามอนสเตอร์กำลังกลับไปยังตำแหน่งเดิม
+    EnemySoundEffect effect;
 
 
     void Start()
     {
+        effect = GetComponent<EnemySoundEffect>();
         rb = GetComponent<Rigidbody2D>();
         startingPosition = startpositionenemy.position; // บันทึกตำแหน่งเริ่มต้นของมอนสเตอร์
     }
@@ -140,6 +142,7 @@ public class MonsterPatrol2 : MonoBehaviour
     // ฟังก์ชั่นจัดการการโจมตี
     IEnumerator Attack()
     {
+        effect.EnemySoundHighpitch(0);
         isAttacking = true;  // มอนสเตอร์กำลังโจมตี
         animatorenemy.SetBool("EnemyAttack", true); // เริ่มการโจมตี
         rb.velocity = Vector2.zero;  // หยุดการเคลื่อนไหวระหว่างโจมตี

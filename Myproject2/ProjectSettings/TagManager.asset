@@ -13,6 +13,7 @@ TagManager:
   - Item
   - Wall
   - repow
+  - Boss
   layers:
   - Default
   - TransparentFX

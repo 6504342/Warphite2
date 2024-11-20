@@ -424,6 +424,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Floor 2 Fix 3_15
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697770591e5ea034f8c24c522eac94ab
+      internalID: -161383250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -442,6 +463,7 @@ TextureImporter:
       Floor 2 Fix 3_12: -1617712671
       Floor 2 Fix 3_13: -630513630
       Floor 2 Fix 3_14: -2066866457
+      Floor 2 Fix 3_15: -161383250
       Floor 2 Fix 3_2: -1252415932
       Floor 2 Fix 3_3: -1463454287
       Floor 2 Fix 3_4: 391118784

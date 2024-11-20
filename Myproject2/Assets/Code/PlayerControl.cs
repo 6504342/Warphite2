@@ -17,6 +17,7 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] GameObject transition;
     private Vector2 currentRespawnPoint;  // ตำแหน่งการเกิดใหม่ปัจจุบัน
     public Vector2 defaultRespawnPoint;   // ตำแหน่งเริ่มต้น
+    PlayerSoundEffect effect;
 
 
 
@@ -29,6 +30,7 @@ public class PlayerControl : MonoBehaviour
 
     private void Start()
     {
+        effect = GetComponent<PlayerSoundEffect>();
         died = GetComponent<PlayerHealth>();
         currentRespawnPoint = defaultRespawnPoint;
     }
@@ -45,6 +47,7 @@ public class PlayerControl : MonoBehaviour
             if (Input.GetButtonDown("Jump") && isGrounded)
             {
                 rb.velocity = Vector2.up * jumpForce;
+                effect.PlaySoundHighpitch(3);
             }
             if (Input.GetKeyDown(KeyCode.L)) 
             {
@@ -52,7 +55,7 @@ public class PlayerControl : MonoBehaviour
             }
 
             // กดปุ่ม E เพื่อใช้งานอนิเมชั่น Attack
-            if (Input.GetKeyDown(KeyCode.E) && isGrounded && canattack == true)
+            if (Input.GetKeyDown(KeyCode.E) && isGrounded && canattack == true && rb.velocity == Vector2.zero)
             {
                 int randomNumber = Random.Range(1, 3);
                 if (randomNumber == 1)
@@ -128,11 +131,16 @@ public class PlayerControl : MonoBehaviour
         {
             Vector2 knockbackDirection = (transform.position - collision.transform.position).normalized; // หาทิศทางการกระเด็นถอยไป
             StartCoroutine(Knockback(knockbackDirection));  // เรียกใช้ Coroutine เพื่อจัดการการกระเด็น
+            effect.PlaySoundHighpitch(2);
         }
         if (collision.CompareTag("Respawn"))
         {
             // บันทึกตำแหน่ง Respawn เมื่อชนกับจุด Respawn Point
             currentRespawnPoint = collision.transform.position;
+        }
+        if (collision.gameObject.CompareTag("Enemy")) 
+        {
+            effect.PlaySoundHighpitch(1);
         }
     }
 
@@ -150,11 +158,13 @@ public class PlayerControl : MonoBehaviour
     public IEnumerator ComboTimer()
     {
         canattack = false;
+        effect.PlaySoundLowpitch(0);
         yield return new WaitForSeconds(0.3f);
         canattack = true;
         animator.SetBool("Attack1", false);
         animator.SetBool("Attack2", false);
         animator.SetBool("AirAttack", false);
+
         StopCoroutine(ComboTimer());
     }
 

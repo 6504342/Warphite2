@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2243897745755010440}
   - component: {fileID: 6445864343938559196}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy Ent_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 6674639621648227156}
   - component: {fileID: 1619704638975405830}
   - component: {fileID: 1857781416076482900}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Handdownleft
   m_TagString: EnemyAttack
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6993982174724604611}
   - component: {fileID: 8376247559630441260}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Heart
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 694393991601377913}
   - component: {fileID: 3694299766099945496}
   - component: {fileID: 8850664591044503220}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -441,7 +441,7 @@ GameObject:
   - component: {fileID: 88430241479329090}
   - component: {fileID: 8005115282005376277}
   - component: {fileID: 5740629409971756612}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyBoss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -562,7 +562,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7964478820512939926}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Boss sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -602,7 +602,7 @@ GameObject:
   - component: {fileID: 550235497010238628}
   - component: {fileID: 728164426021144299}
   - component: {fileID: 1251945742760496542}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Handmidleft
   m_TagString: EnemyAttack
   m_Icon: {fileID: 0}
@@ -732,7 +732,7 @@ GameObject:
   - component: {fileID: 4924127283310895247}
   - component: {fileID: 6132421479806316676}
   - component: {fileID: 2429015016461064262}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Handupleft
   m_TagString: EnemyAttack
   m_Icon: {fileID: 0}
@@ -862,7 +862,7 @@ GameObject:
   - component: {fileID: 1473712744252923756}
   - component: {fileID: 2809110762184279335}
   - component: {fileID: 6029580218962520165}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Square (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -993,7 +993,7 @@ GameObject:
   - component: {fileID: 8302491333558421727}
   - component: {fileID: 6369913328985729605}
   - component: {fileID: 1637033649009136022}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Handmidright
   m_TagString: EnemyAttack
   m_Icon: {fileID: 0}
@@ -1122,7 +1122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2925640143035833201}
   - component: {fileID: 5145555317763214907}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1207,7 +1207,7 @@ GameObject:
   - component: {fileID: 424002308711588819}
   - component: {fileID: 1961147320807660452}
   - component: {fileID: 4705660885071124910}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Handdownright
   m_TagString: EnemyAttack
   m_Icon: {fileID: 0}
@@ -1337,7 +1337,7 @@ GameObject:
   - component: {fileID: 6381227505885279847}
   - component: {fileID: 4970161677465876944}
   - component: {fileID: 5016382432263393577}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Handupright
   m_TagString: EnemyAttack
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1561094568637661021}
   - component: {fileID: 4082341521083865664}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 5
   m_Sprite: {fileID: 459406395, guid: 7d021383d8e187845890f5ba5c3ea7bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -155,8 +155,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 6
   m_Sprite: {fileID: 222103839, guid: 7d021383d8e187845890f5ba5c3ea7bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -223,7 +223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7439883432301371863}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Startposition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -255,7 +255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8009058114762352699}
   - component: {fileID: 4980714872936480423}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Leftleg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,8 +315,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: -1
   m_Sprite: {fileID: -348314281, guid: 7d021383d8e187845890f5ba5c3ea7bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -338,7 +338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6243177876712422589}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: groundcheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -370,7 +370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3599421306273899443}
   - component: {fileID: 3398995499460635569}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Leftarm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,8 +430,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 1201648674, guid: 7d021383d8e187845890f5ba5c3ea7bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -454,7 +454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 366102631090124959}
   - component: {fileID: 8443286417134014911}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rightarm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -514,8 +514,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 4
   m_Sprite: {fileID: 454322515, guid: 7d021383d8e187845890f5ba5c3ea7bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -538,7 +538,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6658890266203378805}
   - component: {fileID: 3013733014639427210}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -598,8 +598,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 3
   m_Sprite: {fileID: 1405712264, guid: 7d021383d8e187845890f5ba5c3ea7bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -628,7 +628,7 @@ GameObject:
   - component: {fileID: 6248804151666091172}
   - component: {fileID: 619604221252740883}
   - component: {fileID: 4367302730421474624}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyGolem
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -854,7 +854,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4651985715376734304}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: playerstopatk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -885,7 +885,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5121764699717766041}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Checkcontrol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -921,7 +921,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4497853694077394768}
   - component: {fileID: 7888043103181861964}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SoundBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1049,7 +1049,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8462527894638336719}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: playercheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1081,7 +1081,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6617319459192007207}
   - component: {fileID: 5731353283008224883}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rightleg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1141,8 +1141,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -496710608, guid: 7d021383d8e187845890f5ba5c3ea7bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1165,7 +1165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8710529882847501319}
   - component: {fileID: 915918038937039474}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ghost Flying_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1225,8 +1225,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 6
   m_Sprite: {fileID: 976765922, guid: 45488412c8c9473448a5e19f55caabd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

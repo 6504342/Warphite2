@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
@@ -18,9 +19,8 @@ public class PlayerControl : MonoBehaviour
     private Vector2 currentRespawnPoint;  // ตำแหน่งการเกิดใหม่ปัจจุบัน
     public Vector2 defaultRespawnPoint;   // ตำแหน่งเริ่มต้น
     PlayerSoundEffect effect;
-
-
-
+    public GameObject[] slashing;
+    public LayerMask enemyLayer;
 
     bool canattack = true;
     bool isDashing = true;
@@ -34,6 +34,7 @@ public class PlayerControl : MonoBehaviour
         died = GetComponent<PlayerHealth>();
         currentRespawnPoint = defaultRespawnPoint;
     }
+
     void Update()
     {
         if (!isKnockedBack && isMoving == true)
@@ -52,6 +53,14 @@ public class PlayerControl : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.L)) 
             {
                 moveSpeed = 15f;
+            }
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                rb.gravityScale = 5f;
+            }
+            if (Input.GetKeyUp(KeyCode.S))
+            {
+                rb.gravityScale = 1f;
             }
 
             // กดปุ่ม E เพื่อใช้งานอนิเมชั่น Attack
@@ -93,6 +102,7 @@ public class PlayerControl : MonoBehaviour
             } 
         }
     }
+
     private IEnumerator Dash()
     {
         isDashing = false;          // ตั้งค่าว่ากำลังพุ่ง
@@ -101,7 +111,7 @@ public class PlayerControl : MonoBehaviour
 
         yield return new WaitForSeconds(dashDuration);  // รอจนกว่าจะพุ่งครบระยะเวลา
 
-        moveSpeed -= dashSpeed;    // กลับไปที่ความเร็วปกติ        // ตั้งค่าว่าหยุดพุ่งแล้ว
+        moveSpeed -= dashSpeed;    // กลับไปที่ความเร็วปกติ
         animator.speed = 1.5f;
         yield return new WaitForSeconds(1f);
         isDashing = true;
@@ -138,12 +148,20 @@ public class PlayerControl : MonoBehaviour
             // บันทึกตำแหน่ง Respawn เมื่อชนกับจุด Respawn Point
             currentRespawnPoint = collision.transform.position;
         }
-        if (collision.gameObject.CompareTag("Enemy")) 
+        if (((1 << collision.gameObject.layer) & enemyLayer) != 0)
         {
+            Vector2 collisionPoint = collision.transform.position;
+            int slashingeffect = Random.Range(0, 3);
+            GameObject slashingInstance = Instantiate(slashing[slashingeffect], collisionPoint, transform.rotation);
+            if (transform.localScale.x < 0)
+            {
+                slashingInstance.transform.rotation = Quaternion.Euler(0, 180, 0);
+            }
+            Destroy(slashingInstance, 2.0f);
             effect.PlaySoundHighpitch(1);
         }
-    }
 
+    }
     public IEnumerator Knockback(Vector2 knockbackDirection)
     {
         isKnockedBack = true;  // ป้องกันไม่ให้ผู้เล่นเคลื่อนที่ขณะกระเด็น
@@ -164,8 +182,6 @@ public class PlayerControl : MonoBehaviour
         animator.SetBool("Attack1", false);
         animator.SetBool("Attack2", false);
         animator.SetBool("AirAttack", false);
-
-        StopCoroutine(ComboTimer());
     }
 
     public void Dead()
@@ -175,6 +191,7 @@ public class PlayerControl : MonoBehaviour
         animator.SetTrigger("Dead");
         StartCoroutine(Respawn());
     }
+    
     public IEnumerator Respawn() 
     {
         transition.SetActive(true);

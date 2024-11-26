@@ -22,9 +22,11 @@ public class MonsterPatrol : MonoBehaviour
     private bool isWaiting = false;         // ตรวจสอบว่ามอนสเตอร์กำลังรอหรือไม่
     private bool isAttacking = false;       // ตัวแปรตรวจสอบว่ามอนสเตอร์กำลังโจมตี
     EnemySoundEffect effect;
+    EnemyHealth EnemyH;
 
     void Start()
     {
+        EnemyH = GetComponent<EnemyHealth>();
         effect = GetComponent<EnemySoundEffect>();
         rb = GetComponent<Rigidbody2D>();
     }
@@ -150,9 +152,10 @@ public class MonsterPatrol : MonoBehaviour
     // ฟังก์ชั่นจัดการการโจมตี
     IEnumerator Attack()
     {
-        effect.EnemySoundHighpitch(0);
+        
         isAttacking = true;  // มอนสเตอร์กำลังโจมตี
         animatorenemy.SetBool("EnemyAttack", true); // เริ่มการโจมตี
+        EnemyH.AttackEnemySound();
         rb.velocity = Vector2.zero;  // หยุดการเคลื่อนไหวระหว่างโจมตี
         yield return new WaitForSeconds(attackDuration); // รอจนกว่าเวลาการโจมตีจะหมด
         animatorenemy.SetBool("EnemyAttack", false); // จบการโจมตี

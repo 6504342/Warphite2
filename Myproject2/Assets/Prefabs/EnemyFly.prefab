@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7295602769179188064}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Leftwingflap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3401181044732434608}
   - component: {fileID: 8487635265326003462}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: body2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,8 +106,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 5
   m_Sprite: {fileID: -193083833, guid: d74dada9ae41f3d4fad05b0a25b7d9dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5224354962058807657}
   - component: {fileID: 5584063934865042357}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leftwing4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,8 +190,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 4
   m_Sprite: {fileID: 801294340, guid: d74dada9ae41f3d4fad05b0a25b7d9dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -214,7 +214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7633304094161705955}
   - component: {fileID: 443642966364237642}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leftleg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,8 +274,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -1844502383, guid: d74dada9ae41f3d4fad05b0a25b7d9dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -298,7 +298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5328196173565501669}
   - component: {fileID: 561782432772388711}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: rightwing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,8 +358,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 6
   m_Sprite: {fileID: -1907379149, guid: d74dada9ae41f3d4fad05b0a25b7d9dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -381,7 +381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5872366516781632308}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rightwingflap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -418,7 +418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4855087692692627416}
   - component: {fileID: 4461752312036798044}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ghost Flying_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,8 +478,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 976765922, guid: 45488412c8c9473448a5e19f55caabd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
@@ -502,7 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1186433421923048334}
   - component: {fileID: 5275777639375739657}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: body3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -562,8 +562,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 5
   m_Sprite: {fileID: -877475299, guid: d74dada9ae41f3d4fad05b0a25b7d9dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -585,7 +585,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7520738338258413929}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: playercheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -617,7 +617,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5882510728180530635}
   - component: {fileID: 4041175289273282660}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: rightwing4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -677,8 +677,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 6
   m_Sprite: {fileID: 801294340, guid: d74dada9ae41f3d4fad05b0a25b7d9dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -707,7 +707,7 @@ GameObject:
   - component: {fileID: 4563579744720564634}
   - component: {fileID: 417503685344156574}
   - component: {fileID: 5452919134201943547}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyFly
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -929,7 +929,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7841417215032396667}
   - component: {fileID: 8945720936337670891}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leftwing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -989,8 +989,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 4
   m_Sprite: {fileID: -1183374846, guid: d74dada9ae41f3d4fad05b0a25b7d9dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1012,7 +1012,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2343233021774826907}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: groundcheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1105,8 +1105,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -102313880, guid: 706325ec2b2d08a44980b0424fb5704d, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
@@ -1174,7 +1174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3063055477206699088}
   - component: {fileID: 4431577141030404189}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1234,8 +1234,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 5
   m_Sprite: {fileID: 1239841673, guid: d74dada9ae41f3d4fad05b0a25b7d9dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1257,7 +1257,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8306716116003227541}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Flying sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1298,7 +1298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2615415405979053694}
   - component: {fileID: 2447338943091847415}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: rightarm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1358,8 +1358,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 6
   m_Sprite: {fileID: -290542331, guid: d74dada9ae41f3d4fad05b0a25b7d9dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1382,7 +1382,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4831504633262797767}
   - component: {fileID: 4591396526869502361}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leftwing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1442,8 +1442,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 4
   m_Sprite: {fileID: 636587498, guid: d74dada9ae41f3d4fad05b0a25b7d9dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1465,7 +1465,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8081931061762564278}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: playerstopatk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1497,7 +1497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2784736469438723762}
   - component: {fileID: 5215577598945385011}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leftwing5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1557,8 +1557,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 4
   m_Sprite: {fileID: -1644229872, guid: d74dada9ae41f3d4fad05b0a25b7d9dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1580,7 +1580,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7680001448769379668}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Startposition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1612,7 +1612,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6675609361834172465}
   - component: {fileID: 2365350023127968393}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: rightwing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1672,8 +1672,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 6
   m_Sprite: {fileID: -1183374846, guid: d74dada9ae41f3d4fad05b0a25b7d9dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1696,7 +1696,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2869106896188056460}
   - component: {fileID: 5054576470520833389}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rightleg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1756,8 +1756,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1597249219, guid: d74dada9ae41f3d4fad05b0a25b7d9dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1780,7 +1780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7288025447569215612}
   - component: {fileID: 960658048094901875}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: rightwing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1840,8 +1840,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 6
   m_Sprite: {fileID: 636587498, guid: d74dada9ae41f3d4fad05b0a25b7d9dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1864,7 +1864,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7607663167863269211}
   - component: {fileID: 3060771321413383492}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leftwing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1924,8 +1924,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 4
   m_Sprite: {fileID: -1907379149, guid: d74dada9ae41f3d4fad05b0a25b7d9dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1948,7 +1948,7 @@ GameObject:
   m_Component:
   - component: {fileID: 951486295346805853}
   - component: {fileID: 1259859978085304682}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SoundBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2077,7 +2077,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2001743440240714944}
   - component: {fileID: 7634628884732216335}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: leftarm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2137,8 +2137,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 4
   m_Sprite: {fileID: -566161996, guid: d74dada9ae41f3d4fad05b0a25b7d9dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2161,7 +2161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3813531629149527910}
   - component: {fileID: 4973060375946070645}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: rightwing5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2221,8 +2221,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 6
   m_Sprite: {fileID: -1644229872, guid: d74dada9ae41f3d4fad05b0a25b7d9dd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2244,7 +2244,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3657967626807832974}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Checkcontrol
   m_TagString: Untagged
   m_Icon: {fileID: 0}

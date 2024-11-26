@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4506768555173081213}
   - component: {fileID: 6786946711677852183}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Leftleg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1171950401, guid: 5ab5d604267fc884985102c600ec4f48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 8420109943642556683}
   - component: {fileID: 2752192130974763765}
   - component: {fileID: 2342643445088997922}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyInk
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ MonoBehaviour:
   animatorenemy: {fileID: 2342643445088997922}
   Itemdrop: {fileID: 2778207260101266803, guid: c666ddb7b72656d4eb17eb5198e8c208,
     type: 3}
-  knockbackForce: 0
+  knockbackForce: -0.03
   damagedoes: 1
 --- !u!114 &7793192989420498611
 MonoBehaviour:
@@ -328,7 +328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 366772993745308850}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: playercheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5736697803367612491}
   - component: {fileID: 2381996414117487268}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: InkEnemyWave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,8 +420,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -523778042, guid: 5ab5d604267fc884985102c600ec4f48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -443,7 +443,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4131413084495055412}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: groundcheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -475,7 +475,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1587887865629267331}
   - component: {fileID: 8996093674324475909}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ghost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -535,8 +535,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1890618949, guid: 5ab5d604267fc884985102c600ec4f48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -558,7 +558,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2479013274918523796}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: playerstopatk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -590,7 +590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7889551130017956002}
   - component: {fileID: 2952465522905304724}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: InkEnemyhammerr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -650,8 +650,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 261600524, guid: 5ab5d604267fc884985102c600ec4f48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -674,7 +674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8741233128588063979}
   - component: {fileID: 7238183732385380310}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rightleg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -734,8 +734,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: -1
   m_Sprite: {fileID: 1152052263, guid: 5ab5d604267fc884985102c600ec4f48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -757,7 +757,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3333959816257843553}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Checkcontrol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -793,7 +793,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6422424214628410365}
   - component: {fileID: 5089792134834428577}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -853,8 +853,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 4
   m_Sprite: {fileID: -245497134, guid: 5ab5d604267fc884985102c600ec4f48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -877,7 +877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7993893122959061182}
   - component: {fileID: 6212895732118199181}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -937,8 +937,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -1956371463, guid: 5ab5d604267fc884985102c600ec4f48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -960,7 +960,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5150791684913723633}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Startposition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -992,7 +992,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4421354841041110584}
   - component: {fileID: 9019073265512375281}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SoundBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1121,7 +1121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1872615938301138593}
   - component: {fileID: 3456204773857227701}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Leftarm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1181,8 +1181,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: -1935470282, guid: 5ab5d604267fc884985102c600ec4f48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1205,7 +1205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2315486532020229201}
   - component: {fileID: 5818310440923666084}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Rightarm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1265,8 +1265,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 3
   m_Sprite: {fileID: 847481088, guid: 5ab5d604267fc884985102c600ec4f48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1350,8 +1350,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1622096423
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -99868746, guid: fcfe133d20eaf384e98b20627321b7ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

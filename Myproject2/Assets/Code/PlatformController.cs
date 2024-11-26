@@ -18,8 +18,9 @@ public class PlatformController : MonoBehaviour
         if (collision.CompareTag("Player") && collision.attachedRigidbody.velocity.y > 0)
         {
             Physics2D.IgnoreCollision(GameObject.FindGameObjectWithTag("Player").GetComponent<Collider2D>(), platformCollider, true);
-            Debug.Log("·ÐÅØ");
+            Debug.Log("work");
         }
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)

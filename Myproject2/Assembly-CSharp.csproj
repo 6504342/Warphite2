@@ -66,8 +66,10 @@
     <Compile Include="Assets\Code\EnemyTypeTwo.cs" />
     <Compile Include="Assets\Code\BossEnemyHealth.cs" />
     <Compile Include="Assets\Code\DamagePopup.cs" />
+    <Compile Include="Assets\Code\SecretRoom.cs" />
     <Compile Include="Assets\Code\EnemyHealth.cs" />
     <Compile Include="Assets\Code\EnemyTypeone.cs" />
+    <Compile Include="Assets\Code\Outline.cs" />
     <Compile Include="Assets\Code\AudioOption.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Code\interectobject.cs" />

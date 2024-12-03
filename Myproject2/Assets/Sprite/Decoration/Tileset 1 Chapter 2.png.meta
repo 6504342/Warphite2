@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,574 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1845
+        width: 271
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4049ff37c8326b46b1ebc0f1e589bbf
+      internalID: 453379434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_1
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1845
+        width: 273
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac848c9c0369304b905314afbb9850f
+      internalID: -148921672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_2
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1845
+        width: 274
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b17723641872ce4898af68cedf85dea
+      internalID: 1428196162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_3
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 1845
+        width: 273
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dafe7fd5f91d9745b009b3221397f00
+      internalID: -411501313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_4
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 1857
+        width: 221
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13de33038f5fa014e9d407a9de5a5241
+      internalID: -1169515074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_5
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 1860
+        width: 364
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f81007a9be64564f807fd0e0db09180
+      internalID: -279616534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_6
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 1864
+        width: 167
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe9d8ecb47e69a4a8ea90b3609e7279
+      internalID: 959817563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_7
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 1863
+        width: 276
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e8a98e34ae9844aadbf0c730812343
+      internalID: -1364059054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1357
+        width: 304
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a1958e3be36764bba6106083ef12a0
+      internalID: -642782712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_9
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1356
+        width: 327
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25305e1e9273f5f4d91f8de9a9810eb9
+      internalID: 729461096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_10
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 1358
+        width: 302
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79d74ab7bd84f04399a579705db0957
+      internalID: 1279779066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_11
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 1356
+        width: 302
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb096b44cbc9174b871324c28ecd8aa
+      internalID: 1910569811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_12
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 1360
+        width: 233
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50271535c9e9d7c48b4bddcf5862e8c4
+      internalID: -2024807032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_13
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 1393
+        width: 245
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4661e4ba4293b245aef2db633242423
+      internalID: -31591590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_14
+      rect:
+        serializedVersion: 2
+        x: 2256
+        y: 1399
+        width: 256
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b561e0c4f19794f9eadf29b0a93e31
+      internalID: 381852464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_15
+      rect:
+        serializedVersion: 2
+        x: 2565
+        y: 1396
+        width: 272
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63ab2550c50a224f8000c339c8e70b3
+      internalID: 717948526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_16
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 818
+        width: 170
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9056152de84362a40b6361487a438305
+      internalID: -750931484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_17
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 807
+        width: 368
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db999e3f29c72de42829bdda8665e743
+      internalID: 1510840641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_18
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 831
+        width: 439
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083c04d0dafbf294d94fa02606f4f122
+      internalID: 311094820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_19
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 825
+        width: 364
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb2bbdbe936e0f4ba57cacad39ba1c0
+      internalID: 229928973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_20
+      rect:
+        serializedVersion: 2
+        x: 1757
+        y: 835
+        width: 319
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8f68dd68c04f648ab0bb3d18e566a8
+      internalID: 1520322548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_21
+      rect:
+        serializedVersion: 2
+        x: 2181
+        y: 843
+        width: 612
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e6daed0b8d6cd46be737db09513d38
+      internalID: -285102143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_22
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 179
+        width: 406
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761b80b495ffe904e857d3529c7680c1
+      internalID: 88419757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_23
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 182
+        width: 245
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc98cb88e6b4fad4fa61493ca5d161c7
+      internalID: 1657718590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_24
+      rect:
+        serializedVersion: 2
+        x: 1937
+        y: 185
+        width: 121
+        height: 465
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3df777e89eda0469213f4e6f9969c2
+      internalID: -261971636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_25
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 484
+        width: 612
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde695cde79aaaf4fa75ea72cccb1d50
+      internalID: 2126116456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset 1 Chapter 2_26
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 0
+        width: 613
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056fdd658ba52da49908ac6253e5f38c
+      internalID: 522596456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +686,34 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tileset 1 Chapter 2_0: 453379434
+      Tileset 1 Chapter 2_1: -148921672
+      Tileset 1 Chapter 2_10: 1279779066
+      Tileset 1 Chapter 2_11: 1910569811
+      Tileset 1 Chapter 2_12: -2024807032
+      Tileset 1 Chapter 2_13: -31591590
+      Tileset 1 Chapter 2_14: 381852464
+      Tileset 1 Chapter 2_15: 717948526
+      Tileset 1 Chapter 2_16: -750931484
+      Tileset 1 Chapter 2_17: 1510840641
+      Tileset 1 Chapter 2_18: 311094820
+      Tileset 1 Chapter 2_19: 229928973
+      Tileset 1 Chapter 2_2: 1428196162
+      Tileset 1 Chapter 2_20: 1520322548
+      Tileset 1 Chapter 2_21: -285102143
+      Tileset 1 Chapter 2_22: 88419757
+      Tileset 1 Chapter 2_23: 1657718590
+      Tileset 1 Chapter 2_24: -261971636
+      Tileset 1 Chapter 2_25: 2126116456
+      Tileset 1 Chapter 2_26: 522596456
+      Tileset 1 Chapter 2_3: -411501313
+      Tileset 1 Chapter 2_4: -1169515074
+      Tileset 1 Chapter 2_5: -279616534
+      Tileset 1 Chapter 2_6: 959817563
+      Tileset 1 Chapter 2_7: -1364059054
+      Tileset 1 Chapter 2_8: -642782712
+      Tileset 1 Chapter 2_9: 729461096
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

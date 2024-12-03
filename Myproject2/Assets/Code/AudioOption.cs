@@ -19,8 +19,6 @@ public class AudioOption : MonoBehaviour
         SetMasterVolume(masterSlider.value);
         SetMusicVolume(musicSlider.value);
         SetSFXVolume(sfxSlider.value);
-
-        Invoke("CloseWindow", 0.01f);
     }
 
     public void SetMusicVolume(float volume)
@@ -41,9 +39,5 @@ public class AudioOption : MonoBehaviour
         // ลดเสียงให้เงียบเมื่อ slider อยู่ที่ต่ำสุด
         audioMixer.SetFloat("MasterVolume", volume <= 0.01f ? -80f : Mathf.Log10(volume) * 20);
         PlayerPrefs.SetFloat("MasterVolume", volume);
-    }
-    public void CloseWindow() 
-    {
-        gameObject.SetActive(false);
     }
 }

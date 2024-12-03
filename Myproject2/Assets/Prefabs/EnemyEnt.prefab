@@ -43,7 +43,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 5722171027894972147, guid: 76c34c5f159434443a338895b68d81c3,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: f9df9788c41261f42a27c5d581e45d77, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 34e0473c9a20d334a8e3ba5cce957a22, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -178,6 +178,7 @@ Transform:
   - {fileID: 5244695288282211994}
   - {fileID: 4428852414063023943}
   - {fileID: 6494566442922903231}
+  - {fileID: 1345703897241818653}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5038231599085876421
@@ -192,12 +193,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0004026a4a910ae4383370571e97f212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 40
   animatorenemy: {fileID: 8989298963378876087}
   Itemdrop: {fileID: 2778207260101266803, guid: c666ddb7b72656d4eb17eb5198e8c208,
     type: 3}
   knockbackForce: 5
   damagedoes: 1
+  slashing: {fileID: 1065694437330134978, guid: 373ffc25928ede94e826dec40a680a05,
+    type: 3}
 --- !u!114 &3731824002641583156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,6 +275,7 @@ MonoBehaviour:
   soundEffects:
   - {fileID: 8300000, guid: 34e0473c9a20d334a8e3ba5cce957a22, type: 3}
   - {fileID: 8300000, guid: b6c5bf82e488d4c4995bd1728115f574, type: 3}
+  delay: 0.6
 --- !u!61 &8295237474217760930
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -329,7 +333,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1710,3 +1714,97 @@ Transform:
   m_Children: []
   m_Father: {fileID: 648982004469142361}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &7222425059011384846
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8586022572483253819}
+    m_Modifications:
+    - target: {fileID: 8545531655462699027, guid: 6a0a9a27a4c841349b78d52d3f1fe858,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.448
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545531655462699027, guid: 6a0a9a27a4c841349b78d52d3f1fe858,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.007
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545531655462699027, guid: 6a0a9a27a4c841349b78d52d3f1fe858,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.819505
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545531655462699027, guid: 6a0a9a27a4c841349b78d52d3f1fe858,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545531655462699027, guid: 6a0a9a27a4c841349b78d52d3f1fe858,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545531655462699027, guid: 6a0a9a27a4c841349b78d52d3f1fe858,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545531655462699027, guid: 6a0a9a27a4c841349b78d52d3f1fe858,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545531655462699027, guid: 6a0a9a27a4c841349b78d52d3f1fe858,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545531655462699027, guid: 6a0a9a27a4c841349b78d52d3f1fe858,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8545531655462699027, guid: 6a0a9a27a4c841349b78d52d3f1fe858,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581707805176081007, guid: 6a0a9a27a4c841349b78d52d3f1fe858,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581707805176081007, guid: 6a0a9a27a4c841349b78d52d3f1fe858,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581707805176081007, guid: 6a0a9a27a4c841349b78d52d3f1fe858,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1622096423
+      objectReference: {fileID: 0}
+    - target: {fileID: 8796226992522454911, guid: 6a0a9a27a4c841349b78d52d3f1fe858,
+        type: 3}
+      propertyPath: m_Name
+      value: Smash CH1 VFX 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8796226992522454911, guid: 6a0a9a27a4c841349b78d52d3f1fe858,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a0a9a27a4c841349b78d52d3f1fe858, type: 3}
+--- !u!4 &1345703897241818653 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8545531655462699027, guid: 6a0a9a27a4c841349b78d52d3f1fe858,
+    type: 3}
+  m_PrefabInstance: {fileID: 7222425059011384846}
+  m_PrefabAsset: {fileID: 0}

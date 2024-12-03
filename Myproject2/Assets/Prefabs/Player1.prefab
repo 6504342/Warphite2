@@ -378,9 +378,11 @@ MonoBehaviour:
   - {fileID: 8932840682160259306, guid: 89decd718078d1c4ea6feb3d5a5d0ae9, type: 3}
   - {fileID: 615911540199226695, guid: 04506de3c6e5f8942b4eb58579f9e12e, type: 3}
   - {fileID: 4551675801921843331, guid: dd01bd577b4e40143b5a044c8db0bf31, type: 3}
+  - {fileID: 7872709367057571637, guid: 5d3e00c5ac4c46d429aa4f2839c82798, type: 3}
   enemyLayer:
     serializedVersion: 2
     m_Bits: 512
+  deadimage: {fileID: 0}
 --- !u!114 &2561168430003620683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -411,7 +413,7 @@ MonoBehaviour:
   maxPower: 100
   powerSlider: {fileID: 0}
   powerIncreaseAmount: 10
-  damagedoesadd: 1
+  damagedoesadd: 0
 --- !u!114 &2321806214321184707
 MonoBehaviour:
   m_ObjectHideFlags: 0

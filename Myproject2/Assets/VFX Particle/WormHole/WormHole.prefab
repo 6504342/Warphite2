@@ -9704,7 +9704,7 @@ ParticleSystem:
   m_GameObject: {fileID: 7468267807990604859}
   serializedVersion: 8
   lengthInSec: 4
-  simulationSpeed: 1
+  simulationSpeed: 2
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
@@ -14459,7 +14459,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 30
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0

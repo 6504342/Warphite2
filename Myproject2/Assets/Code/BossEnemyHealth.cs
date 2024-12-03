@@ -7,11 +7,12 @@ public class BossEnemyHealth : MonoBehaviour
     private float currentHealth;   // ค่าพลังชีวิตปัจจุบันของศัตรู
     public float deadtime = 3f;
     public Animator animatorenemy;
-    public Transform Itemdrop;
-
+    public AudioSource audioSource;
+    public AudioClip[] soundEffects;
     public float knockbackForce = 5f; // แรงที่ใช้ในการกระเด็น
     public int damagedoes = 1;
-
+    [SerializeField] public GameObject slashing;
+    private GameObject wingame;
     private Rigidbody2D rb;
     private bool isDead = false;  // ตัวแปรตรวจสอบว่าศัตรูตายหรือยัง
 
@@ -19,6 +20,7 @@ public class BossEnemyHealth : MonoBehaviour
     {
         currentHealth = maxHealth; // กำหนดค่าพลังชีวิตเริ่มต้น
         rb = GetComponent<Rigidbody2D>(); // อ้างอิงถึง Rigidbody2D ของศัตรู
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -27,8 +29,12 @@ public class BossEnemyHealth : MonoBehaviour
         {
             int damage = damagedoes;
             TakeDamage(damage);
+            Vector2 collisionPoint = gameObject.transform.position;
+            GameObject splast = Instantiate(slashing, collisionPoint, transform.rotation);
+            Destroy(splast, 1.0f);
         }
     }
+    
 
     public void TakeDamage(int damage)
     {
@@ -54,10 +60,33 @@ public class BossEnemyHealth : MonoBehaviour
 
         animatorenemy.SetBool("Dead", true); // เริ่มแอนิเมชันการตาย
         rb.velocity = Vector2.zero; // หยุดการเคลื่อนที่ของศัตรู
-
-        // รอจนกว่าแอนิเมชันการตายจะเล่นเสร็จ
         yield return new WaitForSeconds(deadtime);
-        Itemdrop.gameObject.SetActive(true);
         Destroy(gameObject);
+    }
+    public void IsDead() 
+    {
+        Destroy(gameObject, 3f);
+    }
+    public void HeartBeat() 
+    {
+        audioSource.clip = soundEffects[1];
+        audioSource.Play();
+        
+    }
+    public void HandFast()
+    {
+        audioSource.clip = soundEffects[2];
+        audioSource.Play();
+
+    }
+    public void StopAllSounds() 
+    {
+            audioSource.Stop(); 
+            AudioSource[] allAudioSources = FindObjectsOfType<AudioSource>(); 
+            foreach (AudioSource source in allAudioSources) 
+            {
+                source.Stop(); 
+            } 
+        
     }
 }

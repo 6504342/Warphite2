@@ -746,12 +746,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0004026a4a910ae4383370571e97f212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 15
+  maxHealth: 20
   animatorenemy: {fileID: 4563579744720564634}
   Itemdrop: {fileID: 2778207260101266803, guid: c666ddb7b72656d4eb17eb5198e8c208,
     type: 3}
   knockbackForce: 2
   damagedoes: 1
+  slashing: {fileID: 7441804353849884234, guid: 0cf2cff61ce14054eb2cf1ec1764b279,
+    type: 3}
 --- !u!114 &488336100823724874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -826,6 +828,7 @@ MonoBehaviour:
   soundEffects:
   - {fileID: 8300000, guid: 2143a4b7cc13cae4ebdb03211bbc82c1, type: 3}
   - {fileID: 8300000, guid: 499035cb78fa2f74683c721b47dfdd3f, type: 3}
+  delay: 0
 --- !u!95 &4563579744720564634
 Animator:
   serializedVersion: 5

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerControl : MonoBehaviour
 {
     public float moveSpeed = 5f;
@@ -21,6 +21,11 @@ public class PlayerControl : MonoBehaviour
     PlayerSoundEffect effect;
     public GameObject[] slashing;
     public LayerMask enemyLayer;
+    public GameObject WINGAME;
+    private int lifeplayer = 5;
+    private BossEnemyHealth bossreset;
+    private BossRoom camcomeback;
+    [SerializeField] GameObject deadimage;
 
     bool canattack = true;
     bool isDashing = true;
@@ -30,6 +35,7 @@ public class PlayerControl : MonoBehaviour
 
     private void Start()
     {
+        
         effect = GetComponent<PlayerSoundEffect>();
         died = GetComponent<PlayerHealth>();
         currentRespawnPoint = defaultRespawnPoint;
@@ -50,7 +56,7 @@ public class PlayerControl : MonoBehaviour
                 rb.velocity = Vector2.up * jumpForce;
                 effect.PlaySoundHighpitch(3);
             }
-            if (Input.GetKeyDown(KeyCode.L)) 
+            if (Input.GetKeyDown(KeyCode.L) && Input.GetKey(KeyCode.RightShift)) 
             {
                 moveSpeed = 15f;
             }
@@ -86,7 +92,7 @@ public class PlayerControl : MonoBehaviour
                     StartCoroutine(ComboTimer());
                 }
             }
-            if (Input.GetKeyDown(KeyCode.M)) 
+            if (Input.GetKeyDown(KeyCode.M) && Input.GetKey(KeyCode.RightShift)) 
             {
                 Dead();
             }
@@ -117,7 +123,7 @@ public class PlayerControl : MonoBehaviour
         isDashing = true;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.layer == LayerMask.NameToLayer("Floor"))
         {
@@ -142,23 +148,37 @@ public class PlayerControl : MonoBehaviour
             Vector2 knockbackDirection = (transform.position - collision.transform.position).normalized; // หาทิศทางการกระเด็นถอยไป
             StartCoroutine(Knockback(knockbackDirection));  // เรียกใช้ Coroutine เพื่อจัดการการกระเด็น
             effect.PlaySoundHighpitch(2);
+
+            Vector2 Collisionplayer = gameObject.transform.position;
+            GameObject slashAtplayer = Instantiate(slashing[3], Collisionplayer, transform.rotation);
+            Destroy(slashAtplayer, 1.0f);
         }
         if (collision.CompareTag("Respawn"))
         {
             // บันทึกตำแหน่ง Respawn เมื่อชนกับจุด Respawn Point
             currentRespawnPoint = collision.transform.position;
         }
+        if (collision.CompareTag("Wingame"))
+        {
+            WINGAME.SetActive(true);
+        }
         if (((1 << collision.gameObject.layer) & enemyLayer) != 0)
         {
             Vector2 collisionPoint = collision.transform.position;
             int slashingeffect = Random.Range(0, 3);
             GameObject slashingInstance = Instantiate(slashing[slashingeffect], collisionPoint, transform.rotation);
+
             if (transform.localScale.x < 0)
             {
                 slashingInstance.transform.rotation = Quaternion.Euler(0, 180, 0);
             }
-            Destroy(slashingInstance, 2.0f);
+            Destroy(slashingInstance, 1.0f);
             effect.PlaySoundHighpitch(1);
+        }
+        if (collision.CompareTag("WarpToScene2")) 
+        {
+            rb.transform.position = new Vector2(0, 0);
+            SceneManager.LoadScene("Level2");
         }
 
     }
@@ -189,13 +209,32 @@ public class PlayerControl : MonoBehaviour
         rb.velocity = Vector2.zero;
         isMoving = false;
         animator.SetTrigger("Dead");
+        bossreset = FindFirstObjectByType<BossEnemyHealth>();
+        if (bossreset  != null )
+         {
+            bossreset.IsDead();
+        }
+    
         StartCoroutine(Respawn());
     }
     
     public IEnumerator Respawn() 
     {
         transition.SetActive(true);
+        lifeplayer--;
+        Debug.Log(lifeplayer);
         yield return new WaitForSeconds(RespawnTime);
+        if (lifeplayer == 0) 
+        {
+            deadimage.gameObject.SetActive(true);
+            isMoving = false;
+            yield break;
+        }
+        camcomeback = FindFirstObjectByType<BossRoom>();
+        if (camcomeback != null) 
+        {
+            camcomeback.camback();
+        }
         died.Respawn();
         animator.SetTrigger("Dead");
         transform.position = currentRespawnPoint;

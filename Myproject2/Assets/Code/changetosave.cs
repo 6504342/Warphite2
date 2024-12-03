@@ -18,9 +18,9 @@ public class changetosave : MonoBehaviour
             DontDestroyOnLoad(gameObject); // ทำให้ GameObject นี้ไม่ถูกทำลายเมื่อเปลี่ยน Scene
         }
     }
-    private void Update()
+    private void Update() 
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.P) && Input.GetKey(KeyCode.RightShift))
         {
             StartCoroutine(ChangeToLevel2());
         }
@@ -30,13 +30,14 @@ public class changetosave : MonoBehaviour
         transition.SetActive(true);
         yield return new WaitForSeconds(2f);
         Playerspawnpoint.transform.position = new Vector2(0, 0);
-        SceneManager.LoadScene("Level2");;
+        SceneManager.LoadScene("Level2");
         yield return new WaitForSeconds(2f);
         transition.SetActive(false);
     }
     public void delete() 
     {
         Time.timeScale = 1f;
+        SceneManager.LoadScene("Menu");
         Destroy(gameObject); 
     }
 }

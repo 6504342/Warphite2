@@ -9,10 +9,14 @@ public class PlayerHealth : MonoBehaviour
     public Slider healthSlider;        // อ้างอิงถึง UI Slider
     private PlayerControl playerControl;
     private bool isDead = false;       // ตัวแปรตรวจสอบสถานะการตายของผู้เล่น
+    PlayerSoundEffect SoundEffectItem;
+
 
     void Start()
     {
+
         playerControl = GetComponent<PlayerControl>();
+        SoundEffectItem = GetComponent<PlayerSoundEffect>();
         currentHealth = maxHealth;     // กำหนดค่าเริ่มต้นของพลังชีวิต
         healthSlider.maxValue = maxHealth; // กำหนดค่าพลังชีวิตสูงสุดใน Slider
         healthSlider.value = currentHealth; // แสดงค่าพลังชีวิตเริ่มต้นใน Slider
@@ -30,6 +34,7 @@ public class PlayerHealth : MonoBehaviour
         {
             TakeDamage(50); // เพิ่มค่าพลังชีวิต
             Destroy(collision.gameObject); // ลบไอเทมเมื่อเก็บแล้ว
+            SoundEffectItem.PlaySoundHighpitch(4);
         }
     }
 
@@ -48,6 +53,7 @@ public class PlayerHealth : MonoBehaviour
     void Die()
     {
         isDead = true; // ตั้งค่าว่าผู้เล่นตายแล้ว
+
         playerControl.Dead(); // เรียกฟังก์ชันการตายจาก PlayerControl
         Debug.Log("Player Died!");
         // คุณอาจจะเพิ่มฟังก์ชัน Respawn หรือแสดง UI การตายได้ที่นี่

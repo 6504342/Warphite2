@@ -77,10 +77,12 @@
     <Compile Include="Assets\Code\EnemyBoss.cs" />
     <Compile Include="Assets\Code\Spawnmonster.cs" />
     <Compile Include="Assets\Code\UiMenu.cs" />
+    <Compile Include="Assets\Code\ChangeScene.cs" />
     <Compile Include="Assets\Code\changetosave.cs" />
     <Compile Include="Assets\Code\Bossdata.cs" />
     <Compile Include="Assets\Code\BossRoom.cs" />
     <Compile Include="Assets\Code\Uipausemenu.cs" />
+    <Compile Include="Assets\Code\HandHitSound.cs" />
     <Compile Include="Assets\Code\PlatformController.cs" />
     <Compile Include="Assets\Code\PlayerControl.cs" />
     <Compile Include="Assets\Code\EnemySoundEffect.cs" />

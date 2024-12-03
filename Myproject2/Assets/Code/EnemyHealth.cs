@@ -14,6 +14,7 @@ public class EnemyHealth : MonoBehaviour
     private Rigidbody2D rb;
     private bool isDead = false;  // ตัวแปรตรวจสอบว่าศัตรูตายหรือยัง
     private Bossdata bd;
+    public GameObject slashing;
     EnemySoundEffect effect;
 
     void Start()
@@ -33,6 +34,10 @@ public class EnemyHealth : MonoBehaviour
 
             Vector2 knockbackDirection = (transform.position - collision.transform.position).normalized; // หาทิศทางการกระเด็นถอยไป
             rb.AddForce(knockbackDirection * knockbackForce, ForceMode2D.Impulse); // เพิ่มแรงกระเด็นถอยไป
+
+            Vector2 collisionPoint = gameObject.transform.position;
+            GameObject splast = Instantiate(slashing, collisionPoint, transform.rotation);
+            Destroy(splast, 1.0f);
         }
     }
 
@@ -54,19 +59,21 @@ public class EnemyHealth : MonoBehaviour
 
     public IEnumerator Die()
     {
-        if (isDead) yield break; // หยุดฟังก์ชันถ้าเคยตายแล้ว
+        if (isDead) yield break; 
         
-        isDead = true; // ตั้งค่าสถานะว่าศัตรูตายแล้ว
-        effect.EnemySoundHighpitch(1);
+        isDead = true;
+        effect.EnemySoundLowpitch(1);
 
 
-        animatorenemy.SetBool("Dead", true); // เริ่มแอนิเมชันการตาย
-        rb.velocity = Vector2.zero; // หยุดการเคลื่อนที่ของศัตรู
-
-        // รอจนกว่าแอนิเมชันการตายจะเล่นเสร็จ
+        animatorenemy.SetBool("Dead", true); 
+        rb.velocity = Vector2.zero;
+        if (Itemdrop != null)
+        {
+            StartCoroutine(ItemSpawn());
+        }
+        Invoke("destroyobject", 1f);
         yield return new WaitForSeconds(2.5f);
         bd.BossHealthReduce();
-        Itemdrop.gameObject.SetActive(true);
         Destroy(gameObject); 
     }
 
@@ -76,5 +83,12 @@ public class EnemyHealth : MonoBehaviour
         {
             effect.EnemySoundHighpitch(0);
         }
+    }
+    public IEnumerator ItemSpawn()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Vector2 itemposition = gameObject.transform.position;
+        Instantiate(Itemdrop, itemposition, transform.rotation);
+        Debug.Log("work");
     }
 }

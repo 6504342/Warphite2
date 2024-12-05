@@ -175,11 +175,6 @@ public class PlayerControl : MonoBehaviour
             Destroy(slashingInstance, 1.0f);
             effect.PlaySoundHighpitch(1);
         }
-        if (collision.CompareTag("WarpToScene2")) 
-        {
-            rb.transform.position = new Vector2(0, 0);
-            SceneManager.LoadScene("Level2");
-        }
 
     }
     public IEnumerator Knockback(Vector2 knockbackDirection)
@@ -220,9 +215,11 @@ public class PlayerControl : MonoBehaviour
     
     public IEnumerator Respawn() 
     {
+        transition.SetActive(false);
+        yield return new WaitForSeconds(0.1f);
         transition.SetActive(true);
         lifeplayer--;
-        Debug.Log(lifeplayer);
+        died.textlife(lifetextdecrease: "x " + lifeplayer);
         yield return new WaitForSeconds(RespawnTime);
         if (lifeplayer == 0) 
         {
@@ -242,4 +239,11 @@ public class PlayerControl : MonoBehaviour
         yield return new WaitForSeconds(RespawnTime);
         transition.SetActive(false);
     }
+    public IEnumerator TransitionPlayer() 
+    {
+        transition.SetActive(true);
+        yield return new WaitForSeconds(4f);
+        transition.SetActive(false);
+    }
 }
+

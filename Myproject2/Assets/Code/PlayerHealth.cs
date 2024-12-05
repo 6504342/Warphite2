@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class PlayerHealth : MonoBehaviour
 {
     public float maxHealth = 100f;     // ค่าพลังชีวิตสูงสุดของผู้เล่น
@@ -10,11 +11,12 @@ public class PlayerHealth : MonoBehaviour
     private PlayerControl playerControl;
     private bool isDead = false;       // ตัวแปรตรวจสอบสถานะการตายของผู้เล่น
     PlayerSoundEffect SoundEffectItem;
+    public Text lifetext;
 
 
     void Start()
     {
-
+        lifetext.text = "x 5";
         playerControl = GetComponent<PlayerControl>();
         SoundEffectItem = GetComponent<PlayerSoundEffect>();
         currentHealth = maxHealth;     // กำหนดค่าเริ่มต้นของพลังชีวิต
@@ -67,5 +69,9 @@ public class PlayerHealth : MonoBehaviour
         healthSlider.value = currentHealth; // ปรับปรุงค่าใน Slider
         Debug.Log("Player Respawned!");
         // เพิ่มฟังก์ชันอื่น ๆ เช่นการย้ายผู้เล่นไปจุดเกิดใหม่ได้ที่นี่
+    }
+    public void textlife(string lifetextdecrease) 
+    {
+        lifetext.text = lifetextdecrease;
     }
 }
